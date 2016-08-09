@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/diagnose.css" rel="stylesheet">
+    <link href="font/awesome-cucc.css" rel="stylesheet">
+    <title>宽带检测</title>
+</head>
+<body>
+<div class="container">
+
+    <!-- serve -->
+    <div class="row serve">
+        <div class="serve-head">
+            <div class="serve-head-left">
+                <div class="information-one">
+                    <div class="serve-circle-icon"><i class="iconfont"></i></div>
+                    <div class="information-account-number">
+
+                    </div>
+                </div>
+                <div class="information-two" style="display: none">
+                    <span>电信</span>
+                            <span class="information-two-star">
+                                <i class="iconfont icon-star"></i>
+                                <i class="iconfont icon-star"></i>
+                                <i class="iconfont icon-star"></i>
+                                <i class="iconfont icon-star"></i>
+                                <i class="iconfont icon-star"></i>
+                            </span>
+                    <span>星级用户</span>
+                </div>
+            </div>
+            <div class="serve-head-right">
+                <i class="iconfont icon-question"></i>
+                <span><a href="diagnose.html">自助手册</a></span>
+            </div>
+        </div>
+    </div>
+
+<div class="phone-load" style="display: none">
+    <div class="row serve-explain">
+        <!--<p>重启猫或路由器</p>-->
+        <!-- circle process -->
+        <div class="row serve-circle">
+            <div class="circle" style="">
+                <div class="pie_left"><div class="left"></div></div>
+                <div class="pie_right"><div class="right"></div></div>
+                <div class="sm-pie_left"></div>
+                <div class="sm-pie_right"></div>
+                <div class="sm-pie_scan"></div>
+                <div class="mask">
+                    <p><span>0</span>%</p>
+                </div>
+            </div>
+        </div>
+        <div class="serve-circle-state"></div>
+    </div>
+
+    <!-- circle loading line -->
+    <div class="serve-circle-line">
+        <div class="row circle-line">
+            <div class="circle-head-line line-load one">
+                <i class="iconfont icon-zhongfujiazai"></i>
+            </div>
+            <div class="circle-body-line">
+                <div class="line-left">连接方式</div>
+                <div class="line-right">检测中</div>
+            </div>
+        </div>
+        <div class="row circle-line">
+            <div class="circle-head-line line-load two">
+                <i class="iconfont icon-zhongfujiazai"></i>
+            </div>
+            <div class="circle-body-line">
+                <div class="line-left">线路类型</div>
+                <div class="line-right"></div>
+            </div>
+        </div>
+        <div class="row circle-line">
+            <div class="circle-head-line line-load three">
+                <i class="iconfont icon-zhongfujiazai"></i>
+            </div>
+            <div class="circle-body-line">
+                <div class="line-left">终端信息查询</div>
+                <div class="line-right"></div>
+            </div>
+        </div>
+        <div class="row circle-line">
+            <div class="circle-head-line line-load four">
+                <i class="iconfont icon-zhongfujiazai"></i>
+            </div>
+            <div class="circle-body-line">
+                <div class="line-left">账号使用状态</div>
+                <div class="line-right"></div>
+            </div>
+        </div>
+        <div class="row circle-line">
+            <div class="circle-head-line line-load five">
+                <i class="iconfont icon-zhongfujiazai"></i>
+            </div>
+            <div class="circle-body-line">
+                <div class="line-left">使用速率</div>
+                <div class="line-right"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- serve select -->
+    <!--<div class="serve-select">-->
+        <!--<button type="button" class="btn">一键修复</button>-->
+        <!--<button type="button" class="btn serve-active">修复无效</button>-->
+        <!--<button type="button" class="btn">人工服务</button>-->
+    <!--</div>-->
+
+
+
+    <!-- progress line -->
+    <div class="web-load">
+        <div class="row progress-line">
+            <div class="jiazai">
+                <div class="load-head">
+                    <div class="load-headimg"></div>
+                    <div class="load-precess"></div>
+                    <div class="load-headtitle">
+                        <p>正在检测中</p>
+                        <span>请耐心等待......</span>
+                    </div>
+                </div>
+                <!-- 进度条 -->
+                <div class="barline" id="probar">
+
+                    <div id="percent"></div>
+                    <div id="line" w="100" style="width:0px;"></div>
+                    <div id="msg" style=""></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/serve.js"></script>
+<script src="js/loading.js"></script>
+<script>
+    window.onload = function () {
+        progressset();
+    }
+</script>
+</html>

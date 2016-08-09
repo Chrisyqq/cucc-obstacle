@@ -1,0 +1,513 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑" ! important;
+}
+.btn.focus, .btn:focus, .btn:hover{
+    color: #ffffff;
+    background: #97d3ff;
+}
+@media screen and (min-width: 1170px) {
+    .container {
+        box-shadow: 0px 0px 10px #dddddd;
+        background: #f0f3f6;
+        margin-top: 30px;
+        min-height: 800px;
+    }
+    /* serve head */
+    .serve{
+
+    }
+    .serve-head{
+        height: 60px;
+        background: #1993ed;
+        color: #ffffff;
+        position: relative;
+        padding-left: 22px;
+    }
+    .serve-head i{
+        font-size: 18px;
+    }
+    .serve-head .serve-head-left{
+        float: left;
+        height: 60px;
+    }
+
+    .serve-circle-icon{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        text-align: center;
+        background: #a2d8ff;
+        margin-top: 8px;
+        float: left;
+    }
+    .information-account-number{
+        float: left;
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    .information-one{
+        position: relative;
+        width: auto;
+        height: 60px;
+        float: left;
+        line-height: 66px;
+    }
+    .information-one .serve-circle-icon i{
+        position: absolute;
+        left: 7px;
+        top: 0px;
+        font-size: 30px;
+    }
+    .information-two{
+        float: left;
+        margin-left: 30px;
+        width: auto;
+        height: 60px;
+        line-height: 64px;
+        font-size: 22px;
+    }
+    .information-two .information-two-star{
+
+    }
+    .information-two .information-two-star i{
+        color: #ffb30f;
+    }
+    .serve-head .serve-head-right{
+        position: absolute;
+        top: 80px;
+        right: 74px;
+        color: #1993ed;
+
+    }
+    .serve-head .serve-head-right a{
+        color: #1993ed;
+        cursor: pointer;
+    }
+    .serve-head .serve-head-right a:hover{
+        text-underline: none;
+        color: #1993ed;
+    }
+    .serve-head .serve-head-right a:active{
+        color: #1993ed;
+    }
+    .serve-head .serve-head-right span{
+        cursor: pointer;
+    }
+
+    /* progress-line */
+    .progress-line {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .barline {
+        width: 600px;
+        border: 1px solid #dedfe0;
+        height: 12px;
+        background: #e1e4e9;
+        border-radius: 8px;
+        margin-left: -300px;
+        position: absolute;
+        left: 50%;
+        top: 320px;
+    }
+
+    .barline #percent {
+        position: absolute;
+        left: 0px;
+        top: -32px;
+        display: inline-block;
+        font-size: 12px;
+        width: 46px;
+        height: 30px;
+        line-height: 26px;
+        background: url("../img/rectangle.png") no-repeat center;
+        background-size: 100% 100%;
+        color: #ffffff;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .barline #line {
+        float: left;
+        height: 12px;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #1993ed !important;
+    }
+
+    .barline #msg {
+        position: absolute;
+        left: 80px;
+        top: 30px;
+        display: inline-block;
+        color: #4DBF7D;
+        font-size: 14px;
+    }
+
+    .load-head {
+        width: 300px;
+        position: absolute;
+        left: 50%;
+        margin-left: -150px;
+        top: 150px;
+    }
+
+    .load-headimg {
+        width: 40px;
+        height: 36px;
+        margin-top: 6px;
+        background: url("../img/refresh.png") no-repeat center;
+        background-size: 100% 100%;
+        animation: loadcircle 2s ease;
+        -webkit-animation: loadcircle 2s ease infinite;
+        -moz-animation: loadcircle 2s ease infinite;
+        -ms-animation: loadcircle 2s ease infinite;
+        -o-animation: loadcircle 2s ease infinite;
+    }
+
+    @-webkit-keyframes loadcircle {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+        }
+
+        50% {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
+    }
+    @-moz-keyframes loadcircle {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+        }
+
+        50% {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
+    }
+    @-ms-keyframes loadcircle {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+        }
+
+        50% {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
+    }
+    @-o-keyframes loadcircle {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+        }
+
+        50% {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
+    }
+    .load-precess {
+        display: none;
+    }
+
+    .load-headtitle {
+        color: #36b1e0;
+        position: absolute;
+        left: 60px;
+        top: 0px;
+    }
+
+    .load-headtitle p {
+        font-size: 34px;
+        font-weight: 900;
+        color: #1993ed;
+    }
+
+    .load-headtitle span {
+        font-size: 22px;
+        color: #1993ed;
+
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    /* login */
+    .serve{
+
+    }
+    .serve-head{
+        height: 40px;
+        background: #1993ed;
+        line-height: 36px;
+        color: #ffffff;
+        font-size: 14px;
+        padding-left: 15px;
+        position: relative;
+        padding-right: 20px;
+        border-bottom: solid 2px #60b4f3;
+    }
+    .serve-circle-icon{
+        float: left;
+    }
+    .serve-head i{
+        font-size: 18px;
+    }
+    .serve-head .left{
+        height: 40px;
+        float: left;
+        position: relative;
+        line-height: 36px;
+    }
+    .serve-head .left span{
+        margin-left: 5px;
+        position: absolute;
+        top: 2px;
+    }
+    .serve-head .right{
+        float: right;
+        height: 40px;
+        position: relative;
+        line-height: 36px;
+    }
+    .serve-head .right span{
+        margin-left: 2px;
+    }
+    .serve-head .information-account-number{
+        position: absolute;
+        top: 2px;
+        left: 40px;
+        color: #ffffff;
+    }
+    .serve-head .serve-head-right{
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        color: #ffffff;
+
+    }
+    .serve-head .serve-head-right a{
+        color: #ffffff;
+    }
+    .serve-head .serve-head-right a:hover{
+        color: #ffffff;
+    }
+    .serve-head .serve-head-right a:active{
+        color: #ffffff;
+    }
+     /* circle load */
+    .serve-explain{
+        text-align: center;
+        background: #32a1f3;
+        min-height: 200px;
+        border-top:#1993ed 1px solid;
+        color: #ffffff;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .serve-circle{
+        position: relative;
+        height: 220px;
+        width: 220px;
+        border-radius: 110px;
+        border:1px solid #ffffff;
+        margin: 0 auto 20px auto;
+    }
+    .circle {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border-radius: 50%;
+        background: #eefaff;
+    }
+    .pie_left, .pie_right {
+        width:200px;
+        height:200px;
+        position: absolute;
+        top: 0;left: 0;
+    }
+    .circle .left,.circle  .right {
+        width:200px;
+        height:200px;
+        background:#9dd6f9;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .pie_right, .right {
+        clip:rect(0,auto,auto,100px);
+    }
+    .pie_left, .left {
+        clip:rect(0,100px,auto,0);
+    }
+    .sm-pie_left, .sm-pie_right{
+        background: #32a1f3;
+        width:188px;
+        height:188px;
+        border-radius: 50%;
+        left: 6px;
+        top: 6px;
+        position: absolute;
+    }
+    .sm-pie_left{
+        clip:rect(0,94px,auto,0);
+        z-index: 100;
+    }
+    .sm-pie_right{
+        clip:rect(0,auto,auto,86px);
+    }
+    .sm-pie_scan{
+        clip:rect(0,94px,auto,0);
+
+    }
+    .sm-pie_scan{
+        z-index: 80;
+        width:188px;
+        height:188px;
+        border-radius: 50%;
+        left: 6px;
+        top: 6px;
+        position: absolute;
+        background: url("../img/scan.png") no-repeat center;
+        background-size: 100% 100%;
+    }
+    .mask {
+        z-index: 150;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        left: 10px;
+        top: 10px;
+        background: url("../img/loadingm.png") no-repeat center;
+        background-size: 100% 100%;
+        position: absolute;
+        text-align: center !important;
+        line-height: 180px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    .mask p{
+        font-size: 40px;
+    }
+    .circle-line{
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+    .circle-head-line{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        line-height: 20px;
+        text-align: center;
+        margin-right: 15px;
+        margin-top: 4px;
+        float: left;
+    }
+    .circle-head-line i{
+        font-size: 20px;
+    }
+    .circle-head-line .icon-zhongfujiazai{
+        font-size: 20px;
+    }
+    .circle-body-line{
+        margin-left: 24px;
+    }
+    .circle-body-line .line-left{
+        float: left;
+        color: #494949;
+    }
+    .circle-body-line .line-right{
+        float: right;
+        color: #acacac;
+    }
+    .line-load {
+        animation: circleChange 2s linear infinite;
+        -moz-animation: circleChange 2s linear infinite;
+        -webkit-animation: circleChange 2s linear infinite;
+        -ms-animation: circleChange 2s linear infinite;
+    }
+    @keyframes circleChange{
+        0%{
+            transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+        }
+    }
+    .circle-body-line{
+        height: 30px;
+        line-height: 30px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+}
+
+
