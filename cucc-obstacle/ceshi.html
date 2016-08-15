@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/serve.css" rel="stylesheet">
+    <link href="font/awesome-cucc.css" rel="stylesheet">
+    <title>流量诊断</title>
+</head>
+<body>
+
+
+        <div class="circle" style="">
+            <div class="pie_left"><div class="left"></div></div>
+            <div class="pie_right"><div class="right"></div></div>
+            <div class="mask"><span>30</span>%</div>
+        </div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/flowindex.js"></script>
+<script src="js/loading.js"></script>
+d,msdjwqjdwopqdkwop
+
+<script>
+    window.onload = function () {
+        var i=0;
+
+        for(var i=0;i++;i<100){
+            setTimeout(func
+        }
+        $('.circle').each(function(index, el) {
+            var num = $(this).find('span').text() * 3.6;
+                $('').css('transform', "rotate(" + num + "deg)");
+            if (num<=180) {
+                $(this).find('.right').css('transform', "rotate(" + num + "deg)");
+            } else {
+                $(this).find('.right').css('transform', "rotate(180deg)");
+                $(this).find('.left').css('transform', "rotate(" + (num - 180) + "deg)");
+            };
+        });
+    }
+</script>
+</html>
