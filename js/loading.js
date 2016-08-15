@@ -7,20 +7,29 @@ var test={
     "lineTest":[{
         "lineStateTrue":"正常",
         "lineStateWhen":"检测中",
-        "lineStatePhone":"已停机",
-        "lineStateRoute":"断线",
-        "lineStateStyleContent":"我也不知道",
-        "lineStateSpeed":"一般快",
-        "lineStateSearchMessage":"什么鬼"
+        "lineStateWrong":"异常",
+        "workCheckHave":"有工单",
+        "localityFault":"有故障"
+    }],
+    "lineName":[{
+        "serveState":"服务状态",
+        "workCheck":"工单检测",
+        "localityFault":"区域性故障",
+        "accountState":"账号使用状态",
+        "useSpeed":"使用速率"
     }]
 };
 var StateTrue=test.lineTest[0].lineStateTrue;
 var StateWhen=test.lineTest[0].lineStateWhen;
-var StatePhone=test.lineTest[0].lineStatePhone;
-var StateRoute=test.lineTest[0].lineStateRoute;
-var StyleContent=test.lineTest[0].lineStateStyleContent;
-var StateSpeed=test.lineTest[0].lineStateSpeed;
-var StateSearchMessage=test.lineTest[0].lineStateSearchMessage;
+var StateWrong=test.lineTest[0].lineStateWrong;
+var checkHave=test.lineTest[0].workCheckHave;
+var localityFault=test.lineTest[0].localityFault;
+
+var titleserveState=test.lineName[0].serveState;
+var titleworkCheck=test.lineName[0].workCheck;
+var titlelocalityFault=test.lineName[0].localityFault;
+var titleaccountState=test.lineName[0].accountState;
+var titleuseSpeed=test.lineName[0].useSpeed;
 var testCl={
     serveCircleState: function () {
         $('.serve-circle-state').text('正在检查中');
@@ -32,24 +41,25 @@ var testCl={
     },
     serveCirclLineSure: function (v,s) {
         v.removeClass('line-load');
-        var vChild=v.children(':first')
-        vChild.removeClass('icon-zhongfujiazai')
-        vChild.addClass('icon-sure')
+        v.html('<i class="iconfont icon-sure"></i>');
         var appearState=v.next().children(':last')
         appearState.text(StateTrue)
-        var vParents=v.parents().next().children(':last').children(':last')
-        vParents.text(StateWhen)
     },
     serveCirclLineWrong: function (v,s) {
         v.removeClass('line-load');
-        var vChild=v.children(':first')
-        vChild.removeClass('icon-zhongfujiazai')
-        vChild.addClass('icon-tanhao')
+        v.html('<i class="iconfont icon-tanhao"></i>')
         var appearState=v.next().children(':last')
         appearState.text(s);
         appearState.css('color','#ffb30f');
-        var vParents=v.parents().next().children(':last').children(':last')
-        vParents.text(StateWhen)
+    },
+    serveCirclLineWhen: function (z,title) {
+        z.html('<div class="byMy-load"><i class="iconfont icon-jiazai"></div></i>');
+        var appearStateWhen=z.next().children(':last')
+        appearStateWhen.text()
+        var appearStateTitle=z.next().children(':first')
+        appearStateTitle.text(title);
+        var appearStateTitle=z.next().children(':last')
+        appearStateTitle.text(StateWhen);
     }
 }
 var precent=0;
@@ -58,29 +68,46 @@ function startCircle(){
     if(precent<100){
         precent=precent+1;
         switch (precent){
+            case 1:
+                var z=$('.serve-circle-line .one');
+                var title=titleserveState
+                testCl.serveCirclLineWhen(z,title);
+                break;
             case 20:
                 var v=$('.serve-circle-line .one');
-                var s=StyleContent;
+                var z=$('.serve-circle-line .two');
+                var s=StateTrue;
+                var title=titleworkCheck
                 testCl.serveCirclLineSure(v,s);
+                testCl.serveCirclLineWhen(z,title);
                 break;
             case 40:
                 var v=$('.serve-circle-line .two');
-                var s=StateRoute;
+                var z=$('.serve-circle-line .three');
+                var s=checkHave;
+                var title=titlelocalityFault
                 testCl.serveCirclLineWrong(v,s);
+                testCl.serveCirclLineWhen(z,title);
                 break;
             case 60:
                 var v=$('.serve-circle-line .three');
-                var s=StateSearchMessage;
-                testCl.serveCirclLineSure(v,s);
+                var z=$('.serve-circle-line .four');
+                var s=localityFault;
+                var title=titleaccountState
+                testCl.serveCirclLineWrong(v,s);
+                testCl.serveCirclLineWhen(z,title);
                 break;
             case 80:
                 var v=$('.serve-circle-line .four');
-                var s=StatePhone;
+                var z=$('.serve-circle-line .five');
+                var s=StateWrong;
+                var title=titleuseSpeed
                 testCl.serveCirclLineWrong(v,s);
+                testCl.serveCirclLineWhen(z,title);
                 break;
             case 100:
                 var v=$('.serve-circle-line .five');
-                var s=StateSpeed;
+                var s=StateTrue;
                 testCl.serveCirclLineSure(v,s);
 
         }

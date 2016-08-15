@@ -445,6 +445,35 @@ body {
         margin-top: 10px;
         padding-left: 20px;
         padding-right: 15px;
+        position: relative;
+    }
+    .serve-circle-line{
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+    .serve-circle-line:before{
+        content: "";
+        height: 220px;
+        width: 1px;
+        background: #d8d8d8;
+        position: absolute;
+        left: 15px;
+        top: -20px;
+        z-index: -1;
+    }
+    .byMy-load{
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background: #1993ed;
+        text-align: center;
+        position: relative;
+    }
+    .byMy-load i{
+        position: absolute;
+        left: 0px;
+        top: -1px;
     }
     .circle-head-line{
         width: 20px;
@@ -468,6 +497,7 @@ body {
     .circle-body-line .line-left{
         float: left;
         color: #494949;
+        font-weight: 900;
     }
     .circle-body-line .line-right{
         float: right;
