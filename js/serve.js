@@ -10,6 +10,7 @@ $(document).ready(function () {
         serveCircleIcon.removeClass('icon-31')
         serveCircleIcon.addClass('icon-person01')
         $('.information-account-number').text(accountNumberAll)
+        $('.index-account-number').text(accountNumberAll)
         $('.information-two').css('display','block');
         $('.bind-tip-list .list-tip').css('display','block')
         //web-load
@@ -18,17 +19,22 @@ $(document).ready(function () {
         //jindutiao
         processerbarq(6000)
         processerbarq(6000)
-    }else {
+        $('.index-information-three').css('display','none')
+    }
+
+    if($(window).width()<'1170'){
         $('.web-load').css('display','none');
         $('.phone-load').css('display','block');
         serveCircleIcon.removeClass('icon-person01')
         serveCircleIcon.addClass('icon-31')
         $('.information-account-number').text(accountNumber);
+        $('.index-account-number').text(accountNumberAll);
+        $('.index-serve-head-right').css('display','none')
         //loading circle
-
         setInterval(function () {
             startCircle();
         }, 100);
+        $('.index-information-three').css('display','block')
     }
     
     //login
