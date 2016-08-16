@@ -695,6 +695,13 @@ body {
     .mask p{
         font-size: 40px;
     }
+    .icon-cucc-qq{
+        background: url("../img/qq.png") no-repeat center;
+        background-size: 100% 100%;
+        width: 26px;
+        height: 20px;
+        margin-top: 10px;
+    }
     .circle-line{
         margin-top: 10px;
         padding-left: 20px;
