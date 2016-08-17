@@ -37,17 +37,59 @@ $(document).ready(function () {
     }
     
     //login
+    //身份证登陆未填写内容提示
     $('.login-id-next').click(function () {
         var idname=$('#identitycardName').val();
         var idpassworld=$('#identitycardPassworld').val();
-        var idnk=$('.identitycard-passWorld-number').text();
+        var idnk=$('.identitycard-passWorld-number');
         if(idname==''){
-            alert('s')
+            idnk.text('请输入开户名');
+            var shakespan=$('.login-prompt').children(':first');
+            shakespan.addClass('shake');
+        }else{
+            if(idname=='123'){
+                if(idpassworld==''){
+                    idnk.text('请输入身份证号');
+                    var shakespan=$('.login-prompt').children(':first');
+                    shakespan.addClass('shake');
+                }else{
+                    if(idpassworld=='123'){
+                        idnk.text('');
+                    //  密码正确之后的操作
+
+                    }else {
+                        idnk.text('身份证号码错误');
+                        var shakespan=$('.login-prompt').children(':first');
+                        shakespan.addClass('shake');
+                    }
+                }
+            }else{
+                if(idpassworld==''){
+                    idnk.text('请输入身份证号');
+                    var shakespan=$('.login-prompt').children(':first');
+                    shakespan.addClass('shake');
+                }else{
+                    if(idpassworld=='123'){
+                        idnk.text('');
+                        //  密码正确之后的操作
+
+                    }else {
+                        idnk.text('开户名或身份证号码错误');
+                        shakespan.addClass('shake');
+                    }
+                }
+            }
         }
-        // if(){
-        //
-        // }
+        setTimeout(removeClass, 1000);
     });
+
+    //shake 提示
+    function removeClass(){
+        var shakespan=$('.login-prompt').children(':first');
+        shakespan.removeClass('shake');
+    }
+
+
     $('.login-way-one').click(function () {
         if($('.login-way-one').hasClass('login-active')){
         }else{
@@ -67,15 +109,15 @@ $(document).ready(function () {
             $('.login-right .right').css('display','block')
         }
     });
-    $('.login-next').click(function () {
-            if($('.login-next').text('登录')){
-                $('.login-next').text('正在处理');
-                $('.login-next').css('background','#a7a7a7')
-            }else {
-
-            }
-    }
-    );
+    // $('.login-next').click(function () {
+    //         if($('.login-next').text('登录')){
+    //             $('.login-next').text('正在处理');
+    //             $('.login-next').css('background','#a7a7a7')
+    //         }else {
+    //
+    //         }
+    // }
+    // );
 
 
 
