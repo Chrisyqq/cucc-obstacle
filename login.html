@@ -31,46 +31,53 @@
                         <div class="active-buttom"></div>
                     </div>
                 </div>
-                <div class="login-input left">
+                <div class="login-input left identitycard">
                     <form>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="开户名">
+                            <input type="number" class="form-control" id="identitycardName" placeholder="开户名">
                             <i></i>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="输入身份正号">
+                            <input type="password" class="form-control" id="identitycardPassworld" placeholder="输入身份正号">
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn login-next">登录</button>
+                            <span class="pull-left identitycard-passWorld-number"></span> <a><span class="pull-right forget-passWorld">忘记密码?</span></a>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn login-next login-id-next">下一步</button>
                         </div>
 
                     </form>
                 </div>
-                <div class="login-input right">
+                <div class="login-input right broadband">
                     <form>
                         <div class="login-view-wait">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="宽带账号">
+                                <input type="email" class="form-control" id="broadbandNumber" placeholder="宽带账号">
                                 <i></i>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" placeholder="宽带密码">
+                                <input type="password" class="form-control" id="broadbandPassworld" placeholder="宽带密码">
                             </div>
-
                             <div class="form-group">
-                                <button type="button" class="btn login-next">下一步</button>
+                                <span class="pull-left broadband-passWorld-number"></span> <a><span class="pull-right forget-passWorld">忘记密码?</span></a>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn login-next login-broadband-next">下一步</button>
                             </div>
                         </div>
-
-                        <div class="login-view-success" style="display: none">
-                            <div class="view-success"><i class="iconfont icon-smile"></i><span>已成功登录</span></div>
-                            <div class="view-number">宽带号:<span>05711234456789</span></div>
-                            <div class="form-group">
-                                <button type="button" class="btn login-next">宽带服务</button>
-                            </div>
-                        </div>
-
                     </form>
+
+                    <div class="login-view-success" style="display: none">
+                        <div class="view-success"><i class="iconfont icon-smile"></i><span>已成功登录</span></div>
+                        <div class="view-number">宽带号:<span>05711234456789</span></div>
+                        <div class="form-group">
+                            <button type="button" class="btn login-next">宽带服务</button>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>

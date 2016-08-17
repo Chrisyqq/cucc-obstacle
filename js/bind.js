@@ -42,7 +42,7 @@ $(document).ready(function () {
     });
     $('.login-next').click(function () {
             if($('.login-next').text('登录')){
-                $('.login-next').text('正在处理')
+                $('.login-next').text('正在处理');
                 $('.login-next').css('background','#a7a7a7')
             }else {
 

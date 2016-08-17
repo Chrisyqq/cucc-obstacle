@@ -37,6 +37,17 @@ $(document).ready(function () {
     }
     
     //login
+    $('.login-id-next').click(function () {
+        var idname=$('#identitycardName').val();
+        var idpassworld=$('#identitycardPassworld').val();
+        var idnk=$('.identitycard-passWorld-number').text();
+        if(idname==''){
+            alert('s')
+        }
+        // if(){
+        //
+        // }
+    });
     $('.login-way-one').click(function () {
         if($('.login-way-one').hasClass('login-active')){
         }else{

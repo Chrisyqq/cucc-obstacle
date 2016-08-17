@@ -233,7 +233,14 @@ body {
         background: #1993ed;
         animation: loginmove 0.2s ease;
     }
-
+    .forget-passWorld{
+        font-size: 12px;
+        color: #1993ed;
+    }
+    .wrong-passWorld-number{
+        font-size: 12px;
+        color: #f60b0b;
+    }
     @keyframes loginmove {
         0% {
             width: 0%;
