@@ -1,34 +1,9 @@
 /**
- * Created by ym-zrl on 16/6/12.
+ * Created by Chris on 16/8/24.
  */
-$(document).ready(function () {
-    //login head
-    var serveCircleIcon=$('.serve-circle-icon i');
-    var accountNumber=1027+"****"+125695456474;
-    var accountNumberAll="账号:"+1027+"****"+125695456474;
-    if($(window).width()>='1170'){
-        serveCircleIcon.removeClass('icon-31');
-        serveCircleIcon.addClass('icon-person01');
-        $('.information-account-number').text(accountNumberAll);
-        $('.index-account-number').text(accountNumberAll);
-        $('.information-two').css('display','block');
-        $('.bind-tip-list .list-tip').css('display','block');
-        //web-load
-        $('.web-load').css('display','block');
-        $('.phone-load').css('display','none');
-     
-    }
-    if($(window).width()<'1170'){
-        $('.web-load').css('display','none');
-        $('.phone-load').css('display','block');
-        serveCircleIcon.removeClass('icon-person01');
-        serveCircleIcon.addClass('icon-31');
-        $('.information-account-number').text(accountNumber);
 
-        $('.index-account-number').text(accountNumberAll);
-        $('.index-serve-head-right').css('display','none');
-        $('.index-information-three').css('display','block')
-    }
+$(document).ready(function () {
+
 
     //login
     //身份证登陆未填写内容提示
@@ -48,7 +23,7 @@ $(document).ready(function () {
                 }else{
                     if(idpassworld=='123'){
                         idnk.text('');
-                    //  密码正确之后的操作
+                        //  密码正确之后的操作
                         $('.identitycard').css('display','none');
                         $('.login-view-success').css('display','block')
                     }else {
@@ -163,9 +138,5 @@ $(document).ready(function () {
     //         }
     // }
     // );
-
-
-
-
 
 });

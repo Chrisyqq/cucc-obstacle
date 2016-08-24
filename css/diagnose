@@ -44,15 +44,15 @@ body {
     }
     .information-account-number{
         float: left;
-        font-size: 18px;
-        margin-left: 18px;
+        font-size: 22px;
+        margin-left: 20px;
     }
     .information-one{
         position: relative;
         width: auto;
         height: 60px;
         float: left;
-        line-height: 60px;
+        line-height: 66px;
     }
     .information-one .serve-circle-icon i{
         position: absolute;

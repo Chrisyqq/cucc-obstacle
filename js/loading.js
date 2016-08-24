@@ -42,27 +42,28 @@ var testCl={
     serveCirclLineSure: function (v,s) {
         v.removeClass('line-load');
         v.html('<i class="iconfont icon-sure"></i>');
-        var appearState=v.next().children(':last')
-        appearState.text(StateTrue)
+        var appearState=v.next().children(':last');
+        appearState.text(StateTrue);
     },
     serveCirclLineWrong: function (v,s) {
         v.removeClass('line-load');
-        v.html('<i class="iconfont icon-tanhao"></i>')
-        var appearState=v.next().children(':last')
+        v.html('<i class="iconfont icon-tanhao"></i>');
+        var appearState=v.next().children(':last');
         appearState.text(s);
         appearState.css('color','#ffb30f');
     },
     serveCirclLineWhen: function (z,title) {
         z.html('<div class="byMy-load"><i class="iconfont icon-jiazai"></div></i>');
-        var appearStateWhen=z.next().children(':last')
-        appearStateWhen.text()
-        var appearStateTitle=z.next().children(':first')
+        var appearStateWhen=z.next().children(':last');
+        appearStateWhen.text();
+        var appearStateTitle=z.next().children(':first');
         appearStateTitle.text(title);
-        var appearStateTitle=z.next().children(':last')
+        var appearStateTitle=z.next().children(':last');
         appearStateTitle.text(StateWhen);
     }
-}
+};
 var precent=0;
+
 function startCircle(){
 
     if(precent<100){
@@ -165,3 +166,20 @@ function progresssetout() {
         },6000);
 }
 
+$(document).ready(function () {
+    //login head
+    if($(window).width()>='1170'){
+        //jinDu-Tiao
+
+        processerbarq(6000);
+
+    }
+    if($(window).width()<'1170'){
+        //loading circle
+        setInterval(function () {
+            startCircle();
+        }, 100);
+    }
+
+
+});

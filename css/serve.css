@@ -76,6 +76,10 @@ body {
         margin-top: 0px;
         margin-right: 20px;
     }
+    .change-name{
+        color: #ffb30f;
+        margin-right: 20px;
+    }
     .information-one{
         position: relative;
         width: auto;
@@ -111,8 +115,8 @@ body {
         margin-left: 30px;
         width: auto;
         height: 60px;
-        line-height: 64px;
-        font-size: 18px;
+        line-height: 60px;
+        font-size: 16px;
     }
     .index-information-two .index-information-two-star i{
         color: #ffb30f;
@@ -360,6 +364,12 @@ body {
     /* login */
     .serve{
 
+    }
+    .change-name{
+        position:absolute;
+        top:30px;
+        color: #ffb30f;
+        right: 20px;
     }
     .serve-head{
         height: 40px;
