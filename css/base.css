@@ -1,0 +1,213 @@
+.icon-back, .icon-home{
+    color: #ffffff;
+}
+.icon-sure{
+    color: #19c572;
+}
+.icon-tanhao{
+    color: #ffb30f;
+}
+.icon-jiazai{
+    color: #ffffff;
+}
+.icon-smile{
+    color: #1993ed;
+}
+.icon-xingxing{
+    color: #ffb30f;
+}
+.change-name{
+    color: #ffb30f;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1170px) {
+    .container {
+        box-shadow: 0px 0px 10px #dddddd;
+        background: #f0f3f6;
+        margin-top: 30px;
+        min-height: 800px;
+    }
+
+    .serve-head{
+        height: 60px;
+        background: #1993ed;
+        color: #ffffff;
+        position: relative;
+        padding-left: 22px;
+    }
+    .serve-head i{
+        font-size: 18px;
+    }
+    .serve-head .serve-head-left{
+        float: left;
+        height: 60px;
+    }
+    .serve-circle-icon{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        text-align: center;
+        margin-top: 8px;
+        float: left;
+    }
+    .information-account-number{
+        float: left;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .information-one{
+        position: relative;
+        width: auto;
+        height: 60px;
+        float: left;
+        line-height: 66px;
+    }
+    .information-one .serve-circle-icon i{
+        position: absolute;
+        left: 7px;
+        top: 0px;
+        font-size: 30px;
+    }
+    .information-two{
+        float: left;
+        margin-left: 30px;
+        width: auto;
+        height: 60px;
+        line-height: 64px;
+        font-size: 18px;
+    }
+    .information-two .information-two-star{
+
+    }
+    .information-two .information-two-star i{
+        color: #ffb30f;
+    }
+    .serve-head .serve-head-right{
+        position: absolute;
+        top: 80px;
+        right: 74px;
+        color: #1993ed;
+
+    }
+
+
+    .change-name{
+        color: #ffb30f;
+        margin-right: 20px;
+    }
+
+    /* button组建 */
+    .serve-select{
+        width: 360px;
+        margin: 0 auto ;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .serve-select button{
+        background: #1993ed;
+        color: #ffffff;
+        margin-top: 15px;
+        font-size: 20px;
+        height: 54px;
+        width: 80%;
+    }
+    .serve-select .serve-active{
+        background: #97d3ff;
+    }
+    /* 悬浮 */
+    .container{
+        position: relative;
+    }
+    .home-back{
+        position: absolute;
+        top: 80px;
+        left: 30px;
+        width: 200px;
+        height: 60px;
+    }
+    .home-goto-home{
+        float: left;
+    }
+    .home-goto-homeIcon{
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: #a2d8ff;
+        text-align: center;
+    }
+    .home-goto-homeIcon i{
+        font-size: 30px;
+    }
+    .goto-back{
+        float: left;
+        margin-left: 30px;
+    }
+    .goto-backIcon{
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: #a2d8ff;
+        text-align: center;
+    }
+    .goto-backIcon i{
+        font-size: 30px;
+    }
+    /*  */
+    .serve-explain{
+        text-align: center;
+        background: #f0f3f6;
+        width: 600px;
+        margin: 0 auto 0 auto;
+        min-height: 200px;
+        color: #ffffff;
+        padding-top: 110px;
+        padding-bottom: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+        color: #1993ed;
+    }
+    .serve-explain div{
+        color: #1993ed;
+    }
+
+}
+
+@media only screen and (max-width: 1170px) {
+    /* login */
+    .serve-head .serve-head-right{
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        color: #ffffff;
+
+    }
+    .icon-cucc-qq{
+        background: url("../img/qq.png") no-repeat center;
+        background-size: 100% 100%;
+        width: 26px;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .home-back{
+        display: none;
+    }
+    /* serve head account-number */
+    .serve-explain{
+        text-align: center;
+        background: #32a1f3;
+        min-height: 200px;
+        border-top:#1993ed 1px solid;
+        color: #ffffff;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .home-back{
+        display: none;
+    }
+}

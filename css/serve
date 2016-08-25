@@ -52,6 +52,7 @@ body {
         height: 44px;
         border-radius: 50%;
         text-align: center;
+        background: #a2d8ff;
         margin-top: 8px;
         float: left;
     }
@@ -60,13 +61,14 @@ body {
         height: 44px;
         border-radius: 50%;
         text-align: center;
+        background: #a2d8ff;
         margin-top: 8px;
         float: left;
     }
     .information-account-number{
         float: left;
         font-size: 18px;
-        margin-left: 10px;
+        margin-left: 20px;
     }
     .index-account-number{
         float: left;
@@ -74,7 +76,10 @@ body {
         margin-top: 0px;
         margin-right: 20px;
     }
-
+    .change-name{
+        color: #ffb30f;
+        margin-right: 20px;
+    }
     .information-one{
         position: relative;
         width: auto;
@@ -107,7 +112,7 @@ body {
     }
     .index-information-two{
         float: left;
-        margin-left: 10px;
+        margin-left: 30px;
         width: auto;
         height: 60px;
         line-height: 60px;
@@ -158,18 +163,45 @@ body {
     .index-serve-head .serve-head-right span{
         cursor: pointer;
     }
-
-    .index-serve-select{
-             margin-top: 180px !important;
-             text-align: center;
-         }
-    .index-serve-select .serve-active{
+    .serve-explain{
+        text-align: center;
+        background: #f0f3f6;
+        width: 600px;
+        margin: 0 auto 0 auto;
+        min-height: 200px;
+        color: #ffffff;
+        padding-top: 110px;
+        padding-bottom: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .serve-explain p{
+        font-weight: bold;
+        color: #1993ed;
+        font-size: 30px;
+    }
+    .serve-explain div{
+        text-align: left;
+        color: #1993ed;
+        font-size: 20px;
+    }
+    .serve-select{
+        width: 360px;
+        margin: 0 auto ;
+        margin-top: 190px;
+        text-align: center;
+    }
+    .serve-select button{
+        background: #1993ed;
+        color: #ffffff;
+        margin-top: 15px;
+        font-size: 20px;
+        height: 54px;
+        width: 80%;
+    }
+    .serve-select .serve-active{
         background: #97d3ff;
     }
-    .index-serve-select .btn.focus,.index-serve-select .btn:focus,.index-serve-select .btn:hover{
-             color: #ffffff;
-             background: #f1b73b !important;
-         }
 
     .index-information-three{
         line-height: 20px;
@@ -351,11 +383,7 @@ body {
         line-height: 30px;
         width: auto;
     }
-    .modify-account{
-        margin-top: 100px;
-        font-size: 16px !important;
-        color: #1993ed;
-    }
+
 }
 
 @media only screen and (max-width: 1170px) {
@@ -368,7 +396,7 @@ body {
         top:30px;
         color: #ffb30f;
         right: 20px;
-        margin-right: 0px !important;
+        margin-right: 0px;
         text-decoration: underline;
     }
     .serve-head{
@@ -427,6 +455,22 @@ body {
         color: #ffffff;
     }
 
+    .serve-head .serve-head-right{
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        color: #ffffff;
+
+    }
+    .serve-head .serve-head-right a{
+        color: #ffffff;
+    }
+    .serve-head .serve-head-right a:hover{
+        color: #ffffff;
+    }
+    .serve-head .serve-head-right a:active{
+        color: #ffffff;
+    }
 
     /* 宽带服务 */
     .index-serve-head .serve-head-left{
@@ -545,6 +589,28 @@ body {
     }
     .index-information-two .index-account-number{
         font-size: 16px;
+    }
+
+
+
+    /* serve head account-number */
+    .serve-explain{
+        text-align: center;
+        background: #32a1f3;
+        min-height: 200px;
+        border-top:#1993ed 1px solid;
+        color: #ffffff;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .serve-explain p{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .serve-explain div{
+        text-align: left;
     }
     .serve-select{
         margin-top: 5px;
@@ -737,14 +803,6 @@ body {
         line-height: 30px;
         width: auto;
     }
-    /* 悬浮 */
-    .container{
-        position: relative;
-    }
-    .modify-account{
-        color: #ffffff;
-        margin-top: 30px;
-    }
 }
 
 @media screen and (max-width: 330px) {
@@ -760,7 +818,6 @@ body {
         margin-left: 0px;
 
     }
-
 }
 
 

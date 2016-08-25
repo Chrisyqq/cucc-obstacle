@@ -7,16 +7,16 @@ $(document).ready(function () {
     var accountNumber=1027+"****"+125695456474;
     var accountNumberAll="账号:"+1027+"****"+125695456474;
     if($(window).width()>='1170'){
-        serveCircleIcon.removeClass('icon-31')
-        serveCircleIcon.addClass('icon-person01')
-        $('.information-account-number').text(accountNumberAll)
+        serveCircleIcon.removeClass('icon-31');
+        serveCircleIcon.addClass('icon-person01');
+        $('.information-account-number').text(accountNumberAll);
         $('.bind-tip-list .list-tip').css('display','block');
         $('.information-two').css('display','block');
         $('.serve-head').css('display','block');
     }else {
-        serveCircleIcon.removeClass('icon-person01')
-        serveCircleIcon.addClass('icon-31')
-        $('.information-account-number').text(accountNumber)
+        serveCircleIcon.removeClass('icon-person01');
+        serveCircleIcon.addClass('icon-31');
+        $('.information-account-number').text(accountNumber);
         $('.bind').append('<div class="bind-head">请选择故障现象</div>')
     }
     
@@ -24,9 +24,9 @@ $(document).ready(function () {
     $('.login-way-one').click(function () {
         if($('.login-way-one').hasClass('login-active')){
         }else{
-            $('.login-way-one').addClass('login-active')
-            $('.login-way-two').removeClass('login-active')
-            $('.login-right .left').css('display','block')
+            $('.login-way-one').addClass('login-active');
+            $('.login-way-two').removeClass('login-active');
+            $('.login-right .left').css('display','block');
             $('.login-right .right').css('display','none')
         }
     });
@@ -34,9 +34,9 @@ $(document).ready(function () {
         if($('.login-way-two').hasClass('login-active')){
 
         }else {
-            $('.login-way-two').addClass('login-active')
-            $('.login-way-one').removeClass('login-active')
-            $('.login-right .left').css('display','none')
+            $('.login-way-two').addClass('login-active');
+            $('.login-way-one').removeClass('login-active');
+            $('.login-right .left').css('display','none');
             $('.login-right .right').css('display','block')
         }
     });
@@ -50,8 +50,8 @@ $(document).ready(function () {
     }
     );
 
-    setInterval(function () {
-        startCircle();
-    }, 100);
+    // setInterval(function () {
+    //     startCircle();
+    // }, 100);
 
 });

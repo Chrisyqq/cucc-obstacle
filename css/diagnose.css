@@ -18,84 +18,6 @@ body {
     .serve{
 
     }
-    .serve-head{
-        height: 60px;
-        background: #1993ed;
-        color: #ffffff;
-        position: relative;
-        padding-left: 22px;
-    }
-    .serve-head i{
-        font-size: 18px;
-    }
-    .serve-head .serve-head-left{
-        float: left;
-        height: 60px;
-    }
-
-    .serve-circle-icon{
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        text-align: center;
-        background: #a2d8ff;
-        margin-top: 8px;
-        float: left;
-    }
-    .information-account-number{
-        float: left;
-        font-size: 18px;
-        margin-left: 18px;
-    }
-    .information-one{
-        position: relative;
-        width: auto;
-        height: 60px;
-        float: left;
-        line-height: 60px;
-    }
-    .information-one .serve-circle-icon i{
-        position: absolute;
-        left: 7px;
-        top: 0px;
-        font-size: 30px;
-    }
-    .information-two{
-        float: left;
-        margin-left: 30px;
-        width: auto;
-        height: 60px;
-        line-height: 60px;
-        font-size: 18px;
-    }
-    .information-two .information-two-star{
-
-    }
-    .information-two .information-two-star i{
-        color: #ffb30f;
-    }
-    .serve-head .serve-head-right{
-        position: absolute;
-        top: 80px;
-        right: 74px;
-        color: #1993ed;
-
-    }
-    .serve-head .serve-head-right a{
-        color: #1993ed;
-        cursor: pointer;
-    }
-    .serve-head .serve-head-right a:hover{
-        text-underline: none;
-        color: #1993ed;
-    }
-    .serve-head .serve-head-right a:active{
-        color: #1993ed;
-    }
-    .serve-head .serve-head-right span{
-        cursor: pointer;
-    }
-
     /* progress-line */
     .progress-line {
         position: relative;
@@ -319,28 +241,8 @@ body {
     .serve-head .right span{
         margin-left: 2px;
     }
-    .serve-head .information-account-number{
-        position: absolute;
-        top: 2px;
-        left: 40px;
-        color: #ffffff;
-    }
-    .serve-head .serve-head-right{
-        position: absolute;
-        top: 0px;
-        right: 10px;
-        color: #ffffff;
 
-    }
-    .serve-head .serve-head-right a{
-        color: #ffffff;
-    }
-    .serve-head .serve-head-right a:hover{
-        color: #ffffff;
-    }
-    .serve-head .serve-head-right a:active{
-        color: #ffffff;
-    }
+
      /* circle load */
     .serve-explain{
         text-align: center;

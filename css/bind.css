@@ -35,14 +35,13 @@ body {
         height: 44px;
         border-radius: 50%;
         text-align: center;
-        background: #a2d8ff;
         margin-top: 8px;
         float: left;
     }
     .information-account-number{
         float: left;
-        font-size: 22px;
-        margin-left: 20px;
+        font-size: 18px;
+        margin-left: 10px;
     }
     .information-one{
         position: relative;
@@ -63,7 +62,7 @@ body {
         width: auto;
         height: 60px;
         line-height: 64px;
-        font-size: 22px;
+        font-size: 18px;
     }
     .information-two .information-two-star{
 
