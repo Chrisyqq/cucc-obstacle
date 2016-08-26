@@ -21,14 +21,15 @@
     margin-right: 20px;
     text-decoration: underline;
 }
-
+/* button组建 */
+.login-next{
+    background: #1993ed;
+    width: 100%;
+    color: #ffffff;
+    height: 40px;
+}
 @media screen and (min-width: 1170px) {
-    .container {
-        box-shadow: 0px 0px 10px #dddddd;
-        background: #f0f3f6;
-        margin-top: 30px;
-        min-height: 800px;
-    }
+
 
     .serve-head{
         height: 60px;
@@ -99,6 +100,13 @@
     }
 
     /* button组建 */
+    .login-next{
+        background: #1993ed;
+        width: 100%;
+        color: #ffffff;
+        height: 40px;
+    }
+
     .serve-select{
         width: 360px;
         margin: 0 auto ;
@@ -171,7 +179,96 @@
     .serve-explain div{
         color: #1993ed;
     }
-
+    /* broad-band */
+    .broad-band{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .broad-band-title{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .broad-band-word{
+        width: 500px;
+        margin: auto auto;
+        text-align: left;
+    }
+    /* common-use */
+    .common-use{
+        position: relative;
+        text-align: center;
+        min-height: 200px;
+        width: 400px;
+        margin: auto auto;
+        margin-top: 100px;
+        color: #1993ed;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .test-results-head{
+        width: 80%;
+        margin-left: 10%;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+    .test-results-head .icon-tanhao{
+        color: #1993ed;
+        font-size: 22px;
+    }
+    .test-results-head span{
+        margin-left: 10px;
+    }
+    .test-results-list{
+        width: 80%;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 10%;
+        text-align: left;
+        position: relative;
+    }
+    .test-results-list span{
+        margin-left: 30px;
+        font-size: 18px;
+        font-weight: 900;
+    }
+    .test-results-list:before{
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 8px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #1993ed;
+    }
+    .test-results-list:after{
+        content: '';
+        position: absolute;
+        top: -14px;
+        left: 11px;
+        width: 1px;
+        height: 38px;
+        background: #1993ed;
+    }
+    .test-results-list button{
+        height: 28px;
+        line-height: 10px;
+        margin-top: 6px;
+        float: right;
+        border: 0;
+        width: 50px;
+        color: #ffffff;
+        border-bottom: 3px solid #0f4989;
+        border-radius: 3px;
+        background: #71c0fb;
+        letter-spacing: 2px;
+    }
+    .common-use .login-next{
+        position: absolute;
+        width: 80%;
+        bottom: -100px;
+        left: 10%;
+    }
 }
 
 @media only screen and (max-width: 1170px) {
@@ -204,6 +301,96 @@
         padding-bottom: 20px;
         color: #ffffff;
     }
+    /* broad-band */
+    .broad-band{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .broad-band-title{
+        font-size: 30px;
+    }
+    .broad-band-word{
+        width: 200px;
+        margin: auto auto;
+        text-align: left;
+    }
+    .serve-head .information-account-number {
+        position: absolute;
+        top: 2px;
+        left: 40px;
+        color: #ffffff;
+    }
+    /* common-use */
+    .common-use{
+        position: relative;
+        text-align: center;
+        background: #32a1f3;
+        min-height: 200px;
+        border-top:#1993ed 1px solid;
+        color: #ffffff;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .test-results-head{
+        width: 80%;
+        margin-left: 10%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .test-results-head .icon-tanhao{
+        color: #ffffff;
+    }
+    .test-results-head span{
+
+    }
+    .test-results-list{
+        width: 80%;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 10%;
+        text-align: left;
+        position: relative;
+    }
+    .test-results-list span{
+        margin-left: 20px;
+    }
+    .test-results-list:before{
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 5px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #ffffff;
+    }
+    .test-results-list:after{
+        content: '';
+        position: absolute;
+        top: -14px;
+        left: 7px;
+        width: 1px;
+        height: 38px;
+        background: #ffffff;
+    }
+    .test-results-list button{
+        height: 28px;
+        line-height: 10px;
+        margin-top: 6px;
+        float: right;
+        border: 0;
+        width: 50px;
+        border-bottom: 3px solid #0f4989;
+        border-radius: 3px;
+        background: #71c0fb;
+    }
+    .common-use .login-next{
+        position: absolute;
+        width: 80%;
+        bottom: -100px;
+        left: 10%;
+    }
+
 }
 
 @media screen and (max-width: 650px) {

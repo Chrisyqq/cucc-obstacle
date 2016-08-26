@@ -133,13 +133,6 @@ body {
         height:40px;
     }
 
-    .login-next{
-        background: #1993ed;
-        width: 100%;
-        color: #ffffff;
-        height: 40px;
-    }
-
     .login-right .right{
         display: none;
     }
@@ -233,7 +226,7 @@ body {
     /* logout */
     .logout-success{
         width: 100%;
-        height: 200px;
+        height: 160px;
         text-align: center;
     }
     .logout-success-next{
@@ -247,6 +240,30 @@ body {
         font-size: 22px;
         font-weight: bold;
         color: #1993ed;
+        width: 160px;
+        margin:auto auto;
+        clear: both;
+        margin-top: 30px;
+    }
+    .logout-success-m{
+        width: 100%;
+        margin-top:30px;
+        color:#a2a1a1;
+        font-size:16px;
+    }
+    .logout-success-icon{
+        height: 40px;
+        width:40px;
+        float:left;
+    }
+    .logout-success-icon i{
+        font-size:40px;
+    }
+    .logout-success-word{
+        height: 40px;
+        width:140px;
+        line-height: 60px;
+
     }
 }
 
@@ -429,12 +446,6 @@ body {
         height:40px;
     }
 
-    .login-next{
-        background: #1993ed;
-        width: 100%;
-        color: #ffffff;
-        height: 40px;
-    }
     .login-right .right{
         display: none;
     }
@@ -442,10 +453,48 @@ body {
     /* logout */
     .logout-success-next{
         background: #1993ed;
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
         color: #ffffff;
         height: 40px;
+    }
+     .logout-success{
+        width: 100%;
+        height: 160px;
+        margin-top: 50%;
+        text-align: center;
+    }
+    .logout-success-h{
+        font-size: 22px;
+        font-weight: bold;
+        color: #1993ed;
+        width: 160px;
+        margin:auto auto;
+        clear: both;
+        margin-top: 30px;
+    }
+    .logout-success-m{
+        width: 100%;
+        margin-top:30px;
+        color:#a2a1a1;
+        font-size:16px;
+    }
+    .logout-success-icon{
+        height: 40px;
+        width:40px;
+        float:left;
+    }
+    .logout-success-icon i{
+        font-size:40px;
+    }
+    .logout-success-word{
+        height: 40px;
+        width:140px;
+        line-height: 60px;
+
+    }
+    .logout-success-body{
+        background: #eeeeee;
     }
 }
 

@@ -563,6 +563,7 @@ body {
     .index-serve-select{
         margin-top: 5px;
         text-align: center;
+        margin-bottom: 30px;
     }
     .index-serve-select button{
         background: #1993ed;
@@ -665,7 +666,7 @@ body {
         color: #ffffff;
     }
     .mask p{
-        font-size: 40px;
+        font-size: 30px;
     }
     .icon-cucc-qq{
         background: url("../img/qq.png") no-repeat center;
