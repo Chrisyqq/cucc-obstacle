@@ -24,8 +24,9 @@ $(document).ready(function () {
                     if(idpassworld=='123'){
                         idnk.text('');
                         //  密码正确之后的操作
-                        $('.identitycard').css('display','none');
-                        $('.login-view-success').css('display','block')
+                        // $('.identitycard').css('display','none');
+                        var linelogin=2;
+                        chooseKuandai(linelogin);
                     }else {
                         idnk.text('身份证号码错误');
                         shakespan.addClass('shake');
@@ -138,5 +139,16 @@ $(document).ready(function () {
     //         }
     // }
     // );
+
+//  宽带账号选择
+    function chooseKuandai(linelogin) {
+            if(linelogin>1){
+                $('.login-way').html('').append('<div class="line-login">您输入的身份证下有'+linelogin+'条宽带,请选择</div>').css('border','none');
+                $('.identitycard').css('display','none');
+                $('.chose-login-line').css('display','block');
+            }else{
+
+            }
+    }
 
 });

@@ -7,7 +7,7 @@ $(document).ready(function () {
     var accountNumber=1027+"****"+125695456474;
     var accountNumberAll="账号:"+1027+"****"+125695456474;
     if($(window).width()>='1170'){
-        serveCircleIcon.removeClass('icon-31');
+        serveCircleIcon.removeClass('icon-30');
         serveCircleIcon.addClass('icon-person01');
         $('.information-account-number').text(accountNumberAll);
         $('.index-account-number').text(accountNumberAll);
@@ -24,7 +24,7 @@ $(document).ready(function () {
         $('.web-load').css('display','none');
         $('.phone-load').css('display','block');
         serveCircleIcon.removeClass('icon-person01');
-        serveCircleIcon.addClass('icon-31');
+        serveCircleIcon.addClass('icon-30');
         $('.information-account-number').text(accountNumber);
 
         $('.index-account-number').text(accountNumberAll);

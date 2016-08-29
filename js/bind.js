@@ -7,7 +7,7 @@ $(document).ready(function () {
     var accountNumber=1027+"****"+125695456474;
     var accountNumberAll="账号:"+1027+"****"+125695456474;
     if($(window).width()>='1170'){
-        serveCircleIcon.removeClass('icon-31');
+        serveCircleIcon.removeClass('icon-30');
         serveCircleIcon.addClass('icon-person01');
         $('.information-account-number').text(accountNumberAll);
         $('.bind-tip-list .list-tip').css('display','block');
@@ -15,7 +15,7 @@ $(document).ready(function () {
         $('.serve-head').css('display','block');
     }else {
         serveCircleIcon.removeClass('icon-person01');
-        serveCircleIcon.addClass('icon-31');
+        serveCircleIcon.addClass('icon-30');
         $('.information-account-number').text(accountNumber);
         $('.bind').append('<div class="bind-head">请选择故障现象</div>')
     }
