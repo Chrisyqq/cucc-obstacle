@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Mon Aug 29 16:30:51 2016
+Created by FontForge 20120731 at Tue Aug 30 17:34:08 2016
  By admin
 </metadata>
 <defs>
@@ -16,10 +16,10 @@ Created by FontForge 20120731 at Mon Aug 29 16:30:51 2016
     ascent="896"
     descent="-128"
     x-height="792"
-    bbox="0 -198 1024 896"
+    bbox="0 -212 1024 896"
     underline-thickness="50"
     underline-position="-100"
-    unicode-range="U+0078-E612"
+    unicode-range="U+0078-E614"
   />
 <missing-glyph horiz-adv-x="374" 
 d="M34 0v682h272v-682h-272zM68 34h204v614h-204v-614z" />
@@ -86,5 +86,12 @@ d="M512 748q-91 0 -174 -35.5t-143.5 -95.5t-96 -143t-35.5 -174.5t35.5 -174.5t96 -
 t22.5 46t37 67.5t49.5 77t61.5 80.5t72.5 71.5t82 56q-1 -15 -5 -52t-5 -56.5t3.5 -50.5t16.5 -59q-42 -9 -111.5 -75t-129.5 -143.5t-91 -134.5z" />
     <glyph glyph-name="uniE612" unicode="&#xe612;" 
 d="M379 -55q-18 0 -30 12l-282 282q-12 12 -12 29.5t12 29.5t29.5 12t29.5 -12l253 -253l522 522q12 13 29 13t29.5 -12.5t12.5 -29.5t-13 -30l-551 -551q-12 -12 -29 -12zM379 -55z" />
+    <glyph glyph-name="uniE613" unicode="&#xe613;" 
+d="M698 492q0 10 -8 18t-18 8h-435q-19 -10 -19 -26v-301q0 -9 8 -17t17 -8h26v268q0 10 8 18t17 8h410q-6 0 -6 32zM698 377h-7h-352q-25 0 -25 -26v-38q0 -10 8 -18t17 -8h352h7h51h13h32q9 0 17 8t8 18v38q0 10 -8 18t-17 8h-32h-13h-51zM1024 684q0 53 -37.5 90.5
+t-90.5 37.5h-768q-53 0 -90.5 -37.5t-37.5 -90.5v-768q0 -53 37.5 -90.5t90.5 -37.5h768q53 0 90.5 37.5t37.5 90.5v768zM832 460q10 0 18 -8t8 -18v-364q0 -10 -8 -18t-18 -8h-544q-10 0 -18 8t-8 18v44h-70q-10 0 -18 8t-8 18v397q0 9 8 17t18 8h531q10 0 18 -8t8 -17v-77
+h83z" />
+    <glyph glyph-name="uniE614" unicode="&#xe614;" 
+d="M937 -128h-850q-36 0 -61.5 25.5t-25.5 61.5v850q0 36 25.5 61.5t61.5 25.5h850q36 0 61.5 -25.5t25.5 -61.5v-850q0 -36 -25.5 -61.5t-61.5 -25.5zM650 713q-24 -49 -49 -97q-26 -48 -50 -98l-39 -80l-39 80l-100 195h-132l167 -301h-133v-63h177v-80h-177v-63h177v-151
+h120v151h176v63h-176v80h176v63h-132l167 301h-133z" />
   </font>
 </defs></svg>

@@ -29,7 +29,12 @@
     height: 40px;
 }
 @media screen and (min-width: 1170px) {
-
+    .container {
+        box-shadow: 0px 0px 10px #dddddd;
+        background: #f0f3f6;
+        margin-top: 30px;
+        min-height: 800px;
+    }
 
     .serve-head{
         height: 60px;

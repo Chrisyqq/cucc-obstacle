@@ -30,7 +30,7 @@ body {
     }
     .login{
         width: 100%;
-        height: 360px;
+        min-height: 360px;
         border: 1px solid #a0a0a0;
         border-radius: 4px;
         margin-top: 200px;
@@ -56,6 +56,7 @@ body {
     }
     .login-right{
         width: 50%;
+        min-height: 300px;
         float: right;
         padding-left: 70px;
         padding-right: 70px;
@@ -92,7 +93,7 @@ body {
     .chose-login-number{
         width: 100%;
         height: 40px;
-        line-height: 39px;
+        line-height: 40px;
         color: #d7d7d7;
     }
     .after-input-icon{
@@ -379,7 +380,7 @@ body {
     .chose-login-number{
         width: 100%;
         height: 40px;
-        line-height: 39px;
+        line-height: 40px;
         color: #d7d7d7;
     }
     .after-input-icon{

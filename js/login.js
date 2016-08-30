@@ -25,7 +25,9 @@ $(document).ready(function () {
                         idnk.text('');
                         //  密码正确之后的操作
                         // $('.identitycard').css('display','none');
-                        var linelogin=2;
+
+                        //返回的账号
+                        var linelogin=[1,2,3,4];
                         chooseKuandai(linelogin);
                     }else {
                         idnk.text('身份证号码错误');
@@ -142,13 +144,52 @@ $(document).ready(function () {
 
 //  宽带账号选择
     function chooseKuandai(linelogin) {
-            if(linelogin>1){
+        var lineloginnum=linelogin.length;
+            if(lineloginnum > 1){
                 $('.login-way').html('').append('<div class="line-login">您输入的身份证下有'+linelogin+'条宽带,请选择</div>').css('border','none');
                 $('.identitycard').css('display','none');
                 $('.chose-login-line').css('display','block');
+                for(var i=0;i<lineloginnum;i++){
+                    $('.chose-login-line form').append(
+                        '<div class="form-group chose-login" id="' +
+                        i +
+                        '">' +
+                        '<div class="chose-login-lineinput">' +
+                        '<div class="before-input-icon">' +
+                        '<i class="iconfont icon-30"></i>' +
+                        '</div>' +
+                        '<div class="chose-login-number">' +
+                        linelogin[i] +
+                        '</div>' +
+                        '<div class="after-input-icon">' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>');
+                    if(i==0){
+                        $('.after-input-icon').append('<i class="iconfont icon-zhengque1"></i>')
+                    }
+                }
+                //寻找被电击的 然后标记
+                $('.chose-login').click(function () {
+                    var id=this.id;
+                    var ssd='#'+id+' '+'.after-input-icon';
+                    $('.after-input-icon').html('');
+                    $(ssd).html('<i class="iconfont icon-zhengque1"></i>');
+                    $('.after-input-icon').removeClass('chooseThis');
+                    $(ssd).addClass('chooseThis');
+                    $(ssd).attr('name',id);
+                });
+                //找出要登录的 第几个
+                $('.chose-login-line .login-next').click(function () {
+                    alert($('.chooseThis').attr('name'))
+                });
+                var addheight=(lineloginnum-1)*40+300+"px";
+                $('.login-right').css('min-height',addheight);
             }else{
 
             }
     }
+
+
 
 });

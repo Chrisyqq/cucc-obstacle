@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/feecharging.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="font/iconfont.css" rel="stylesheet">
+    <title>宽带检测</title>
+</head>
+<body>
+<div class="container">
+
+    <!-- serve -->
+    <div class="serve-control">
+        <div class="row serve">
+            <div class="serve-head">
+                <div class="serve-head-left">
+                    <div class="information-one">
+                        <div class="serve-circle-icon"><i class="iconfont"></i></div>
+                        <div class="information-account-number">
+
+                        </div>
+
+                    </div>
+                    <div class="information-two" style="display: none">
+                        <a href="Modify-account.html"><span class="change-name">更改</span></a>
+                        <span>电信</span>
+                        <span class="information-two-star">
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                        </span>
+                        <span>星级用户</span>
+                    </div>
+                </div>
+                <div class="serve-head-right icon-cucc-qq">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row telephone-fee-charging">
+        <div class="telephone-title">
+            <div>充值号码<span>:</span></div><input class="">
+        </div>
+        <div class="telephone-wrong">您的号码输入有误，请填写正确的电信号码！</div>
+        <div class="fee-charging">
+            <div class="charging-head">
+                <i class="iconfont icon-money"></i><span>充值金额</span>
+            </div>
+            <div class="fee-charging-choose"></div>
+        </div>
+        <div class="style-charging">
+            <div class="charging-head">
+                <i class="iconfont icon-yinxingqiazhifu"></i><span>充值方式</span>
+            </div>
+            <div class="style-charging-choose"></div>
+        </div>
+        <div class="fee-time"></div>
+        <div class="now-do-it"></div>
+    </div>
+
+    <div class="home-back">
+        <div class="home-goto-home">
+            <a href="index.html">
+                <div class="home-goto-homeIcon">
+                    <i class="iconfont icon-home"></i>
+                </div>
+            </a>
+        </div>
+        <div class="goto-back">
+            <div class="goto-backIcon">
+                <i class="iconfont icon-back"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/serve.js"></script>
+<script>
+    window.onload=function () {
+        if($(window).width()<'1170'){
+            $('.serve-control').css('display','none');
+            $('body').css('background','#eeeeee')
+        }
+    }
+</script>
+</html>

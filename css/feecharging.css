@@ -1,0 +1,92 @@
+.telephone-title{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 8%;
+    padding-right: 10%;
+    position: relative;
+}
+.telephone-title input{
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+.telephone-title div{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.telephone-title span{
+    margin-left: 4px;
+}
+.telephone-wrong{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 6%;
+    padding-right: 10%;
+    color: #f60b0b;
+    font-size: 12px;
+}
+.fee-charging{
+    width: 100%;
+    min-height: 100px;
+}
+.charging-head{
+    width: 100%;
+    height: 40px;
+    padding-left: 6%;
+    border-bottom: solid 1px #eeeeee;
+    line-height: 40px;
+}
+.fee-charging-head span{
+    margin-left: 10px;
+}
+.fee-charging-head i{
+    color: #1890ff;
+}
+.style-charging{
+    width: 100%;
+    min-height: 100px;
+}
+.charging-head{
+
+}
+@media screen and (min-width: 1170px) {
+    .telephone-fee-charging{
+
+    }
+    .telephone-wrong{
+
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .telephone-fee-charging{
+
+    }
+    .telephone-title{
+        background: #ffffff;
+    }
+    .fee-charging{
+        margin-bottom: 20px;
+        background: #ffffff;
+    }
+    .style-charging{
+        background: #ffffff;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .telephone-title input{
+        width: 64%;
+        height: 40px;
+        line-height: 40px;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+    }
+}

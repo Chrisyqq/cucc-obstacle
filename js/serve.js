@@ -167,7 +167,18 @@ $(document).ready(function () {
     //         }
     // }
     // );
+    $('.login-way-two').click(function () {
+        if($('.login-view-success').css('display')=='none'){
+            if($('.login-way-two').hasClass('login-active')){
 
+            }else {
+                $('.login-way-two').addClass('login-active');
+                $('.login-way-one').removeClass('login-active');
+                $('.login-right .left').css('display','none');
+                $('.login-right .right').css('display','block')
+            }
+        }
+    });
 
 
 
