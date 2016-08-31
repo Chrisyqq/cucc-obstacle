@@ -111,7 +111,12 @@
         color: #ffffff;
         height: 40px;
     }
-
+    .login-next{
+        background: #1993ed;
+        width: 100%;
+        color: #ffffff;
+        height: 40px;
+    }
     .serve-select{
         width: 360px;
         margin: 0 auto ;

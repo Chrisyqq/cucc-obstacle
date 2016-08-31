@@ -3,6 +3,7 @@
  */
 $(document).ready(function () {
     //login head
+    
     var serveCircleIcon=$('.serve-circle-icon i');
     var accountNumber=1027+"****"+125695456474;
     var accountNumberAll="账号:"+1027+"****"+125695456474;
@@ -78,6 +79,7 @@ $(document).ready(function () {
         }
         setTimeout(removeClass, 1000);
     });
+
     //身份证登陆未填写内容提示
     $('.login-broadband-next').click(function () {
         var bdname=$('#broadbandNumber').val();
@@ -179,6 +181,7 @@ $(document).ready(function () {
             }
         }
     });
+
 
 
 
