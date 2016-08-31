@@ -127,9 +127,9 @@
         background: #1993ed;
         color: #ffffff;
         margin-top: 15px;
-        font-size: 20px;
-        height: 54px;
-        width: 80%;
+        font-size: 18px;
+        height: 40px;
+        width: 70%;
     }
     .serve-select .serve-active{
         background: #97d3ff;
@@ -279,6 +279,53 @@
         bottom: -100px;
         left: 10%;
     }
+    /*success page*/
+    .success-page{
+        width: 100%;
+        height: 120px;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .success-page-h{
+        font-size: 22px;
+        font-weight: bold;
+        color: #1993ed;
+        width: 160px;
+        margin:auto auto;
+        clear: both;
+        margin-top: 30px;
+    }
+    .success-page-m{
+        width: 100%;
+        margin-top:30px;
+        color:#a2a1a1;
+        font-size:14px;
+    }
+    .success-page-m i{
+        font-size: 18px;
+        color: #ff9600 !important;
+    }
+    .success-page-m span{
+        color: #ff9600;
+    }
+    .success-page-icon{
+        height: 40px;
+        width:40px;
+        float:left;
+    }
+    .success-page-icon i{
+        font-size:40px;
+    }
+    .success-page-word{
+        height: 40px;
+        width:140px;
+        line-height: 60px;
+
+    }
+    .success-page-body{
+        background: #eeeeee;
+    }
+
 }
 
 @media only screen and (max-width: 1170px) {
@@ -401,6 +448,52 @@
         left: 10%;
     }
 
+    /*success page*/
+    .success-page{
+        width: 100%;
+        height: 120px;
+        margin-top: 50%;
+        text-align: center;
+    }
+    .success-page-h{
+        font-size: 22px;
+        font-weight: bold;
+        color: #1993ed;
+        width: 160px;
+        margin:auto auto;
+        clear: both;
+        margin-top: 30px;
+    }
+    .success-page-m{
+        width: 100%;
+        margin-top:30px;
+        color:#a2a1a1;
+        font-size:14px;
+    }
+    .success-page-m i{
+        font-size: 18px;
+        color: #ff9600 !important;
+    }
+    .success-page-m span{
+        color: #ff9600;
+    }
+    .success-page-icon{
+        height: 40px;
+        width:40px;
+        float:left;
+    }
+    .success-page-icon i{
+        font-size:40px;
+    }
+    .success-page-word{
+        height: 40px;
+        width:140px;
+        line-height: 60px;
+
+    }
+    .success-page-body{
+        background: #eeeeee;
+    }
 }
 
 @media screen and (max-width: 650px) {

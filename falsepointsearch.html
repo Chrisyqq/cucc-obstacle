@@ -46,42 +46,35 @@
 
     <div class="row telephone-fee-charging">
         <div class="telephone-title">
-            <div>充值号码<span>:</span></div><input class="">
+            <div>受理时间<span>:</span></div><input class="">
         </div>
-        <div class="telephone-wrong">您的号码输入有误，请填写正确的电信号码！</div>
+        <div class="telephone-wrong"></div>
         <div class="fee-charging">
             <div class="charging-head">
                 <i class="iconfont icon-money"></i><span>充值金额</span>
             </div>
             <div class="fee-charging-choose">
                 <div class="choose-hang">
-                    <div class="choose-block chris-left active">10元</div>
-                    <div class="choose-block chris-middle">20元</div>
-                    <div class="choose-block chris-right">30元</div>
+                    <div class="chris-left false-point-world">工单类型：故障单</div>
+                    <div class="choose-block chris-right false-point-button false-point-chui">
+                        催收
+                        <div class="false-point-success-chui">
+                            催收成功!
+                        </div>
+                    </div>
                 </div>
 
                 <div class="choose-hang">
-                    <div class="choose-block chris-left">50元</div>
-                    <div class="choose-block chris-middle">100元</div>
-                    <div class="choose-block chris-right">200元</div>
+                    <div class="chris-left false-point-world">故障现象：连接不成功</div>
                 </div>
-            </div>
-        </div>
-        <div class="style-charging">
-            <div class="charging-head">
-                <i class="iconfont icon-yinxingqiazhifu"></i><span>充值方式</span>
-            </div>
-            <div class="style-charging-choose">
+
                 <div class="choose-hang">
-                    <div class="choose-button active"><span><i class="iconfont icon-weixin"></i></span>微信支付</div>
-                    <div class="choose-button"><span><i class="iconfont icon-zhifubao"></i></span>支付宝支付</div>
+                    <div class="chris-left false-point-world">当前状态：故障受理</div>
+                    <div class="choose-block chris-right false-point-button">
+                        查看进度
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="fee-time">您已选择充值10元，使用微信支付付款，预计10分钟
-            内到账。</div>
-        <div class="now-do-it">
-            <button type="button" class="btn login-next">宽带服务</button>
         </div>
     </div>
 
@@ -111,21 +104,11 @@
             $('.serve-control').css('display','none');
             $('body').css('background','#eeeeee')
         }
-        //telephone-fee-charging
-        $('.choose-block').click(function () {
-//            var id=this.id;
-            $('.choose-block').removeClass('active');
-            $(this).addClass('active');
-
-//            $('#'+id).addClass('active')
-
-        });
-
         //choose-button
-        $('.choose-button').click(function () {
+        $('.false-point-chui').click(function () {
 //            var id=this.id;
-            $('.choose-button').removeClass('active');
-            $(this).addClass('active');
+            $(this).addClass('false-point-active');
+            $('.false-point-success-chui').css('display','block');
 
 //            $('#'+id).addClass('active')
 

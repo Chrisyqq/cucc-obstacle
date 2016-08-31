@@ -351,8 +351,18 @@ body {
         line-height: 30px;
         width: auto;
     }
+
     .modify-account{
         margin-top: 100px;
+        font-size: 16px !important;
+        color: #1993ed;
+    }
+    /* 检测detail */
+    .diagnose-detail-head{
+        font-size: 28px;
+    }
+    .diagnose-detail-body{
+        margin-top: 50px;
         font-size: 16px !important;
         color: #1993ed;
     }
@@ -745,6 +755,21 @@ body {
     .modify-account{
         color: #ffffff;
         margin-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    /* 检测detail */
+    .diagnose-detail-head{
+        font-size: 22px;
+    }
+    .diagnose-detail-body{
+        font-size: 14px !important;
+        color: #ffffff;
+        margin-top: 30px;
+        padding-left: 30px;
+        text-align: left;
+        padding-right: 30px;
     }
 }
 

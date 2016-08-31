@@ -45,43 +45,48 @@
     </div>
 
     <div class="row telephone-fee-charging">
-        <div class="telephone-title">
-            <div>充值号码<span>:</span></div><input class="">
-        </div>
-        <div class="telephone-wrong">您的号码输入有误，请填写正确的电信号码！</div>
-        <div class="fee-charging">
-            <div class="charging-head">
-                <i class="iconfont icon-money"></i><span>充值金额</span>
+        <div class="false-schedule-jindu">
+            <div class="false-schedule-jinduone">
+
             </div>
-            <div class="fee-charging-choose">
-                <div class="choose-hang">
-                    <div class="choose-block chris-left active">10元</div>
-                    <div class="choose-block chris-middle">20元</div>
-                    <div class="choose-block chris-right">30元</div>
+            <div class="false-schedule-jindutwo"></div>
+        </div>
+        <div class="telephone-wrong"></div>
+        <div class="fee-charging false-schedule">
+            <div class="fee-charging-choose false-schedule-list">
+                <div class="choose-hang false-schedule-hang">
+                    <div class="chris-left false-schedule-number">故障号码：ASL09877379</div>
+                </div>
+                <div class="choose-hang false-schedule-hang">
+                    <div class="chris-left false-schedule-number">当前单号：262016712286954</div>
                 </div>
 
-                <div class="choose-hang">
-                    <div class="choose-block chris-left">50元</div>
-                    <div class="choose-block chris-middle">100元</div>
-                    <div class="choose-block chris-right">200元</div>
+            </div>
+
+        </div>
+
+        <div class="false-schedule-time">
+            <div class="false-schedule-time-list">
+                <div class="list-head">
+                    <p>故障派单  <span>2016-7-21 16:36:29</span></p>
+                </div>
+                <div class="list-body">
+                    <div class="list-body-num">受理渠道：10000号</div>
+                    <div class="list-body-num">受理人工号：218</div>
                 </div>
             </div>
-        </div>
-        <div class="style-charging">
-            <div class="charging-head">
-                <i class="iconfont icon-yinxingqiazhifu"></i><span>充值方式</span>
-            </div>
-            <div class="style-charging-choose">
-                <div class="choose-hang">
-                    <div class="choose-button active"><span><i class="iconfont icon-weixin"></i></span>微信支付</div>
-                    <div class="choose-button"><span><i class="iconfont icon-zhifubao"></i></span>支付宝支付</div>
+            <div class="false-schedule-time-list">
+                <div class="list-head">
+                    <p>故障派单  <span>2016-7-21 16:36:29</span></p>
+                </div>
+                <div class="list-body">
+                    <div class="list-body-num">受理渠道：10000号</div>
+                    <div class="list-body-num">受理人工号：218</div>
+                    <div class="choose-block false-point-button false-point-chui">
+                        催收
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="fee-time">您已选择充值10元，使用微信支付付款，预计10分钟
-            内到账。</div>
-        <div class="now-do-it">
-            <button type="button" class="btn login-next">宽带服务</button>
         </div>
     </div>
 
@@ -111,26 +116,6 @@
             $('.serve-control').css('display','none');
             $('body').css('background','#eeeeee')
         }
-        //telephone-fee-charging
-        $('.choose-block').click(function () {
-//            var id=this.id;
-            $('.choose-block').removeClass('active');
-            $(this).addClass('active');
-
-//            $('#'+id).addClass('active')
-
-        });
-
-        //choose-button
-        $('.choose-button').click(function () {
-//            var id=this.id;
-            $('.choose-button').removeClass('active');
-            $(this).addClass('active');
-
-//            $('#'+id).addClass('active')
-
-        })
-
 
     }
 </script>
