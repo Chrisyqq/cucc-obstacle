@@ -123,12 +123,22 @@ body {
         padding: 0px;
         margin: 0px;
     }
-    .bind-tip-list .icon-unie60b{
-        font-size: 8px;
-        color: #8a8a8a;
+    .bind-tip-list ul li:before{
+        content: '';
         position: absolute;
-        left: 20px;
-        top: 0px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #8a8a8a;
+        top: 17px;
+        left: 26px;
+    }
+    .bind-tip-list ul div{
+        font-size: 20px;
+        color: #bcbcbc;
+        position: absolute;
+        right: 40px;
+        top: -4px;
     }
     .bind-tip-list .icon-right{
         font-size: 20px;
@@ -140,16 +150,34 @@ body {
     .bind-tip-list ul li span{
         font-size: 20px;
         margin-left: 40px;
+        position: absolute;
+        left: 0;
         color: #8a8a8a;
+        background: #f0f3f6;
+        padding-right: 10px;
+        z-index: 100;
     }
     .bind-tip-list .tip-list-active {
-        background: #32a1f3;
+        color: #1993ed !important;
     }
     .bind-tip-list .tip-list-active span{
-        color: #ffffff;
+        color: #1993ed !important;
     }
-    .bind-tip-list .tip-list-active .icon-right{
-        color: #ffffff;
+    .bind-tip-list .tip-list-active div{
+        color: #1993ed !important;
+    }
+    .bind-tip-list .tip-list-active i{
+        color: #1993ed !important;
+    }
+    .bind-tip-list .tip-list-active:before{
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #1993ed;
+        top: 17px;
+        left: 26px;
     }
     .bind-select{
         width: 360px;
@@ -255,12 +283,15 @@ body {
         padding: 0px;
         margin: 0px;
     }
-    .bind-tip-list .icon-unie60b{
-        font-size: 8px;
-        color: #ffffff;
+    .bind-tip-list ul li:before{
+        content: '';
         position: absolute;
-        left: 20px;
-        top: 0px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #8a8a8a;
+        top: 17px;
+        left: 26px;
     }
     .bind-tip-list .icon-right{
         font-size: 20px;
@@ -273,8 +304,15 @@ body {
         margin-left: 40px;
         color: #8a8a8a;
     }
-    .bind-tip-list .tip-list-active {
-        background: #32a1f3;
+    .bind-tip-list .tip-list-active:before{
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #ffffff;
+        top: 17px;
+        left: 26px;
     }
     .bind-tip-list .tip-list-active span{
         color: #ffffff;

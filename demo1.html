@@ -44,7 +44,10 @@
         </div>
 
         <div class="row serve-explain">
-            <p class="modify-account">您当前绑定的宽带的账号是 :  <span>657857654654</span></p>
+            <div class="serve-select">
+                <p>验证密码</p>
+                <a href=""><button type="button" class="btn">确认密码</button></a>
+            </div>
         </div>
         <!-- serve select -->
         <div class="serve-select">
@@ -72,4 +75,16 @@
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/serve.js"></script>
+<script>
+    window.onload=function () {
+        if($(window).width()>='1170'){
+            $('.broad-band .serve-circle').css('display', 'none');
+            mmmove();
+            mmAddWord()
+        }
+        if($(window).width()<'1170'){
+            mmAddWord()
+        }
+    }
+</script>
 </html>

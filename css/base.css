@@ -123,6 +123,9 @@
         margin-top: 20px;
         text-align: center;
     }
+    .serve-select .title{
+        font-size: 20px;
+    }
     .serve-select button{
         background: #1993ed;
         color: #ffffff;
@@ -130,6 +133,12 @@
         font-size: 18px;
         height: 40px;
         width: 70%;
+    }
+    .serve-select input{
+        margin-top: 15px;
+        height: 40px;
+        width: 70%;
+        margin-left: 15%;
     }
     .serve-select .serve-active{
         background: #97d3ff;

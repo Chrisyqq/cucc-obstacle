@@ -43,24 +43,12 @@
             </div>
         </div>
 
-        <div class="row serve-explain broad-band">
-            <div class="row serve-circle">
-                <div class="circle" style="">
-                    <div class="sm-pie_left"></div>
-                    <div class="sm-pie_right"></div>
-                    <div class="mask">
-                        <p>停机啦</p>
-                    </div>
-                </div>
+        <div class="row serve-explain">
+            <div class="serve-select">
+                <p class="title">验证密码</p>
+                <input type="text" class="form-control">
+                <a href=""><button type="button" class="btn">确认密码</button></a>
             </div>
-            <div class="broad-band-title"></div>
-            <div class="broad-band-word"></div>
-        </div>
-        <!-- serve select -->
-        <div class="serve-select">
-            <button type="button" class="btn">话费充值</button>
-            <button type="button" class="btn">其他常见问题</button>
-            <button type="button" class="btn">预约上门服务</button>
         </div>
     </div>
     <div class="home-back">
@@ -83,5 +71,15 @@
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/serve.js"></script>
-<script src="js/pageChange.js"></script>
+<script>
+    window.onload=function () {
+        if($(window).width()>='1170'){
+
+
+        }
+        if($(window).width()<'1170'){
+            $('.serve-select button').css('background', '#97d3ff');
+        }
+    }
+</script>
 </html>

@@ -84,4 +84,16 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/serve.js"></script>
 <script src="js/pageChange.js"></script>
+<script>
+    window.onload=function () {
+        if($(window).width()>='1170'){
+            $('.broad-band .serve-circle').css('display', 'none');
+            broadBandmove();
+            broadBandAddWord();
+        }
+        if($(window).width()<'1170'){
+            broadBandAddWord();
+        }
+    }
+</script>
 </html>

@@ -17,9 +17,6 @@ $(document).ready(function () {
         //web-load
         $('.web-load').css('display','block');
         $('.phone-load').css('display','none');
-    //     broad-band
-        disappearLoadCircle();
-        broadBandAddWord();
     }
     if($(window).width()<'1170'){
         $('.web-load').css('display','none');
@@ -30,9 +27,7 @@ $(document).ready(function () {
 
         $('.index-account-number').text(accountNumberAll);
         $('.index-serve-head-right').css('display','none');
-        $('.index-information-three').css('display','block')
-        //     broad-band
-        broadBandAddWord();
+        $('.index-information-three').css('display','block');
     }
 
     //login
