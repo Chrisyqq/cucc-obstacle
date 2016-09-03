@@ -317,6 +317,16 @@ body {
         top: 17px;
         left: 26px;
     }
+    .bind-tip-list .tip-list-active:before{
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #ffffff;
+        top: 17px;
+        left: 26px;
+    }
     .bind-tip-list .tip-list-active span{
         color: #ffffff;
     }

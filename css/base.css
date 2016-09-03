@@ -334,7 +334,87 @@
     .success-page-body{
         background: #eeeeee;
     }
+    /* 常见错误代码 */
+    .false-number-head{
+        display: none;
+        height: 40px;
+        line-height: 40px;
+        background: #1993ed;
+        color: #ffffff;
+        text-align: center;
+    }
+    .false-number-select button{
+        color: #8a8a8a;
+        background: #ffffff;
+        border: 1px solid #d7d7d7;
+    }
+    .false-number-select button:hover{
+        color: #ffffff;
+        background: #32a1f3;
+        border: 1px solid #d7d7d7;
+    }
+    .false-number-select{
+        margin-top: 60px;
+    }
 
+    /* follow-images */
+    .follow-image{
+        width: 400px;
+        height: 600px;
+        margin: 60px auto 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+    .follow-image p{
+        padding-left: 60px;
+    }
+    .follow-image-page{
+        padding-left: 60px;
+    }
+    .follow-image-page{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        /*border-bottom: #9f9f9f solid 1px;*/
+    }
+    .follow-image-page-now{
+        width: 100%;
+        color: #1993ed;
+        font-size: 22px;
+    }
+    .follow-images-li ul li{
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        float: left;
+    }
+    .follow-images-li ul{
+        width: 100%;
+        padding: 0;
+    }
+    .follow-images-li ul li img{
+        width: 100%;
+        height: auto;
+    }
+    .follow-image-prev{
+        position: absolute;
+        left: 0px;
+        top: 200px;
+    }
+    .follow-image-prev i{
+        font-size: 80px;
+        color: #1993ed;
+    }
+    .follow-image-next{
+        position: absolute;
+        right: 0px;
+        top: 200px;
+    }
+    .follow-image-next i{
+        font-size: 80px;
+        color: #1993ed;
+    }
 }
 
 @media only screen and (max-width: 1170px) {
@@ -503,10 +583,112 @@
     .success-page-body{
         background: #eeeeee;
     }
+    /* 常见错误代码 */
+    .false-number-head{
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        background: #1993ed;
+        position: relative;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .false-number-select{
+        margin-top: 30px;
+    }
+    .false-number-select button{
+        color: #8a8a8a;
+        background: #ffffff;
+        border: 1px solid #d7d7d7;
+    }
+    .false-number-select button:hover{
+        color: #ffffff;
+        background: #32a1f3;
+        border: 1px solid #d7d7d7;
+    }
+
+    /* follow-images */
+    .follow-image{
+        width: 76%;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    .follow-image-page{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        /*border-bottom: #9f9f9f solid 1px;*/
+    }
+    .follow-image-page-now{
+        width: 100%;
+        color: #1993ed;
+        font-size: 22px;
+    }
+    .follow-images-li ul li{
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        float: left;
+    }
+    .follow-images-li ul{
+        width: 100%;
+        padding: 0;
+    }
+    .follow-images-li ul li img{
+        width: 100%;
+        height: auto;
+    }
+    .follow-image-prev{
+        position: absolute;
+        left: 0px;
+        top: 200px;
+    }
+    .follow-image-prev i{
+        font-size: 50px;
+        color: #1993ed;
+    }
+    .follow-image-next{
+        position: absolute;
+        right: 0px;
+        top: 200px;
+    }
+    .follow-image-next i{
+        font-size: 50px;
+        color: #1993ed;
+    }
 }
 
 @media screen and (max-width: 650px) {
     .home-back{
         display: none;
+    }
+    /* 常见错误代码 */
+    .false-number-head{
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: #1993ed;
+        position: relative;
+        color: #ffffff;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .false-number-select{
+        margin-top: 30px;
+    }
+    .false-number-select button{
+        color: #8a8a8a;
+        background: #ffffff;
+        border: 1px solid #d7d7d7;
+    }
+    .false-number-select button:hover{
+        color: #ffffff;
+        background: #32a1f3;
+        border: 1px solid #d7d7d7;
     }
 }

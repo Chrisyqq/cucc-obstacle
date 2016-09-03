@@ -44,17 +44,15 @@
         </div>
 
         <div class="row serve-explain">
-            <div class="serve-select">
                 <p>经过小翼的细致得检查，发现有可能是拨号软件不给力，建议您重新建立拨号软件,敢问您的电脑系统是什么？</p>
-            </div>
         </div>
         <!-- serve select -->
         <div class="serve-select">
-            <a href="login.html"><button type="button" class="btn">XP系统</button></a>
-            <a href="login.html"><button type="button" class="btn">WIN7/WIN8系统</button></a>
-            <a href="login.html"><button type="button" class="btn">苹果系统</button></a>
-            <a href="login.html"><button type="button" class="btn">其他常见问题</button></a>
-            <a href="login.html"><button type="button" class="btn">预约上门服务</button></a>
+            <a href=""><button type="button" class="btn">XP系统</button></a>
+            <a href=""><button type="button" class="btn">WIN7/WIN8系统</button></a>
+            <a href=""><button type="button" class="btn">苹果系统</button></a>
+            <a href=""><button type="button" class="btn">其他常见问题</button></a>
+            <a href=""><button type="button" class="btn">预约上门服务</button></a>
         </div>
     </div>
     <div class="home-back">
@@ -80,12 +78,12 @@
 <script>
     window.onload=function () {
         if($(window).width()>='1170'){
-            $('.broad-band .serve-circle').css('display', 'none');
-            mmmove();
-            mmAddWord()
+            $('.serve-explain').css('text-align', 'left');
         }
         if($(window).width()<'1170'){
-            mmAddWord()
+            $('.serve-explain').css('text-align', 'left');
+            $('.serve-explain').css('padding-left', '20%');
+            $('.serve-explain').css('padding-right', '20%');
         }
     }
 </script>

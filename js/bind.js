@@ -54,4 +54,16 @@ $(document).ready(function () {
     //     startCircle();
     // }, 100);
 
+//    bind hover
+    $('.bind-tip-list li').hover(function () {
+        $(this).addClass('tip-list-active');
+        $(this).css('cursor','pointer');
+    },
+        function () {
+            $(this).removeClass('tip-list-active');
+            $(this).css('cursor','pointer');
+        }
+    );
+
+
 });
