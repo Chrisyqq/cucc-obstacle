@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/serve.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="font/iconfont.css" rel="stylesheet">
+    <title>网速慢</title>
+</head>
+<body style="overflow: hidden">
+<div class="container">
+
+    <!-- serve -->
+     <div class="serve-control">
+        <div class="row serve">
+            <div class="serve-head">
+                <div class="serve-head-left">
+                    <div class="information-one">
+                        <div class="serve-circle-icon"><i class="iconfont"></i></div>
+                        <div class="information-account-number">
+
+                        </div>
+
+                    </div>
+                    <div class="information-two" style="display: none">
+                        <a href="Modify-account.html"><span class="change-name">更改</span></a>
+                        <span>电信</span>
+                        <span class="information-two-star">
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                        </span>
+                        <span>星级用户</span>
+                    </div>
+                </div>
+                <div class="serve-head-right icon-cucc-qq">
+
+                </div>
+            </div>
+        </div>
+
+         <div class="row false-number-head">
+             <p>网速慢</p>
+             <div class="serve-head-right icon-cucc-qq" style="position: absolute; right: 10px; top: 0;">
+
+             </div>
+         </div>
+         <div class="road-slow-head roadbind-xz-head">
+             请选择您的路由器品牌:
+         </div>
+         <div class="road-slow-luyou">
+             <a href=""><button type="button" class="btn">普联(TP-LINK)</button></a>
+             <a href=""><button type="button" class="btn">水星(MERCURY)</button></a>
+             <a href=""><button type="button" class="btn">腾达(Tenda)</button></a>
+             <a href=""><button type="button" class="btn">小米(Xiaomi)</button></a>
+             <a href=""><button type="button" class="btn"> 极路由(gee)</button></a>
+             <a href=""><button type="button" class="btn"> 360</button></a>
+             <a href=""><button type="button" class="btn"> 友讯(D-LINK)</button></a>
+             <a href=""><button type="button" class="btn">华硕(ASUS)</button></a>
+             <a href=""><button type="button" class="btn">华为(Huawei)</button></a>
+             <a href=""><button type="button" class="btn">斐讯(PHICOMM)</button></a>
+             <a href=""><button type="button" class="btn">磊科(net.core)</button></a>
+             <a href=""><button type="button" class="btn">迅捷(FAST)</button></a>
+         </div>
+         <!-- serve select -->
+
+         <div class="serve-select">
+             <a href=""><button type="button" class="btn">路由器设置通用处理方法</button></a>
+             <a href=""><button type="button" class="btn">ITV机顶盒及路由器链接</button></a>
+         </div>
+
+
+    </div>
+    <div class="home-back">
+        <div class="home-goto-home">
+            <a href="index.html">
+                <div class="home-goto-homeIcon">
+                    <i class="iconfont icon-home"></i>
+                </div>
+            </a>
+        </div>
+        <div class="goto-back">
+            <div class="goto-backIcon">
+                <i class="iconfont icon-back"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/serve.js"></script>
+<script>
+    window.onload=function () {
+        if($(window).width()>='1170'){
+
+        }
+        if($(window).width()<'1170'){
+            $('.serve').css('display', 'none');
+        }
+        var followimg=$('.follow-images-li li');
+        var followimgl=followimg.length;
+        $('.follow-image-page-all').text(followimgl);
+        for (var i=0;i<followimgl;i++){
+            var wd=100*i+15+'%';
+            $('.follow-images-li li').eq(i).css({'position':'absolute','width':'70%','top':'100','left':wd})
+        }
+        var a=1;
+        $('.follow-image-next').click(function () {
+
+            if(a<followimgl){
+                for (var i=0;i<followimgl;i++){
+                    var wd=100*i+15-100*a+'%';
+                    $('.follow-images-li li').eq(i).css({'position':'absolute','width':'70%','top':'100','left':wd});
+                    $('.follow-image-page-now').text(a+1);
+                }
+                a++;
+            }else{
+
+            }
+
+            return a;
+
+        });
+
+        $('.follow-image-prev').click(function () {
+
+            if(a>1){
+                a--;
+                for (var i=0;i<followimgl;i++){
+                    var b=followimgl-a;
+                    var wd=100*i+15-100*b+'%';
+                    $('.follow-images-li li').eq(i).css({'position':'absolute','width':'70%','top':'100','left':wd});
+                    $('.follow-image-page-now').text(a)
+                }
+
+            }else{
+
+            }
+
+
+        })
+    }
+</script>
+</html>

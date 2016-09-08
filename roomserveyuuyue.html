@@ -7,7 +7,7 @@
     <link href="css/serve.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <link href="font/iconfont.css" rel="stylesheet">
-    <title>常见错误代码691</title>
+    <title>室内线路设备</title>
 </head>
 <body>
 <div class="container">
@@ -43,16 +43,19 @@
             </div>
         </div>
 
-        <div class="row serve-explain">
-                <p>经过小翼的细致得检查，发现有可能是拨号软件不给力，建议您重新建立拨号软件,敢问您的电脑系统是什么？</p>
-        </div>
-        <!-- serve select -->
-        <div class="serve-select">
-            <a href=""><button type="button" class="btn">XP系统</button></a>
-            <a href="691false.html"><button type="button" class="btn">WIN7/WIN8系统</button></a>
-            <a href=""><button type="button" class="btn">苹果系统</button></a>
-            <a href=""><button type="button" class="btn">其他常见问题</button></a>
-            <a href=""><button type="button" class="btn">预约上门服务</button></a>
+        <div class="row">
+            <div class="success-page road-speed-yuyue">
+                <div class="road-speed-yuyuetime">
+
+                </div>
+                <div class="road-speed-yuyue-m">预约维修工程师上门检测</div>
+            </div>
+            <div class="serve-select">
+                <input class="form-control input-big" type="text" placeholder="姓名:">
+                <input class="form-control input-big" type="text" placeholder="联系方式:">
+                    <div class="pull-right wrong-passWorld-number">密码或账号错误</div>
+                <a class="change-mm-button"><button type="button" class="btn">提交</button></a>
+            </div>
         </div>
     </div>
     <div class="home-back">
@@ -77,13 +80,26 @@
 <script src="js/serve.js"></script>
 <script>
     window.onload=function () {
-        if($(window).width()>='1170'){
-            $('.serve-explain').css('text-align', 'left');
-        }
         if($(window).width()<'1170'){
-            $('.serve-explain').css('text-align', 'left');
-            $('.serve-explain').css('padding-left', '20%');
-            $('.serve-explain').css('padding-right', '20%');
+            $('.serve').css('display','none');
+            $('body').css('background','#ffffff');
+        }
+        $('.false-point-chui').click(function () {
+//            var id=this.id;
+            $(this).addClass('false-point-active');
+            $('.false-point-success-chui').css('display','block');
+
+//            $('#'+id).addClass('active')
+
+        });
+        $('.change-mm-button').click(function () {
+
+            $('.wrong-passWorld-number').addClass('shake');
+            setTimeout(removeClass, 1000);
+        });
+
+        function removeClass(){
+            $('.wrong-passWorld-number').removeClass('shake');
         }
     }
 </script>

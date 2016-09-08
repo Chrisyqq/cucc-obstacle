@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/diagnose.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="font/iconfont.css" rel="stylesheet">
+    <title>宽带检测</title>
+</head>
+<body>
+<div class="container">
+
+    <!-- serve -->
+    <div class="row serve">
+        <div class="serve-head">
+            <div class="serve-head-left">
+                <div class="information-one">
+                    <div class="serve-circle-icon"><i class="iconfont"></i></div>
+                    <div class="information-account-number">
+                    </div>
+                </div>
+                <div class="information-two" style="display: none">
+                    <a href="Modify-account.html"><span class="change-name">更改</span></a>
+                    <span>电信</span>
+                            <span class="information-two-star">
+                                <i class="iconfont icon-xingxing"></i>
+                                <i class="iconfont icon-xingxing"></i>
+                                <i class="iconfont icon-xingxing"></i>
+                                <i class="iconfont icon-xingxing"></i>
+                                <i class="iconfont icon-xingxing"></i>
+                            </span>
+                    <span>星级用户</span>
+                </div>
+            </div>
+            <div class="serve-head-right icon-cucc-qq">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- progress line -->
+    <div class="web-load">
+        <div class="row progress-line">
+            <div class="jiazai">
+                <div class="load-head">
+                    <div class="load-headimg"></div>
+                    <div class="load-precess"></div>
+                    <div class="load-headtitle xiufu-load-headtitle">
+                        <p>修复中</p>
+
+                    </div>
+                    <p class="xiufu-load-middle">修复只针对宽带的端口，无法处理线缆或路由器等其他问题。</p>
+                </div>
+                <!-- 进度条 -->
+                <div class="barline" id="probar">
+
+                    <div id="percent"></div>
+                    <div id="line" w="100" style="width:0px;"></div>
+                    <div id="msg" style=""></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- home-back -->
+    <div class="home-back">
+        <div class="home-goto-home">
+            <a href="index.html">
+                <div class="home-goto-homeIcon">
+                    <i class="iconfont icon-home"></i>
+                </div>
+            </a>
+        </div>
+        <div class="goto-back">
+            <div class="goto-backIcon">
+                <i class="iconfont icon-back"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/xiufu.js"></script>
+<script src="js/loading.js"></script>
+<script>
+    window.onload=function () {
+        $(document).ready(function () {
+            //login head
+            if($(window).width()>='1170'){
+                //jinDu-Tiao
+
+                processerbarq(6000);
+
+            }
+            if($(window).width()<'1170'){
+                //loading circle
+                processerbarsmall(6000);
+            }
+
+
+        });
+    }
+</script>
+</html>

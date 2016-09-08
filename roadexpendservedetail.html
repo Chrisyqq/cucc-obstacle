@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/serve.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="font/iconfont.css" rel="stylesheet">
+    <title>宽带延伸服务</title>
+</head>
+<body>
+<div class="container">
+
+    <!-- serve -->
+     <div class="serve-control">
+        <div class="row serve">
+            <div class="serve-head">
+                <div class="serve-head-left">
+                    <div class="information-one">
+                        <div class="serve-circle-icon"><i class="iconfont"></i></div>
+                        <div class="information-account-number">
+
+                        </div>
+
+                    </div>
+                    <div class="information-two" style="display: none">
+                        <a href="Modify-account.html"><span class="change-name">更改</span></a>
+                        <span>电信</span>
+                        <span class="information-two-star">
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                        </span>
+                        <span>星级用户</span>
+                    </div>
+                </div>
+                <div class="serve-head-right icon-cucc-qq">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row road-expend-serve-list">
+        <p class="road-expend-serve-list-title">家庭网络服务</p>
+        <div class="expend-serve-list-detail"><span class="pull-left">家庭无线组网</span><span class="pull-right">50元/次</span></div>
+        <div class="expend-serve-list-detail"><span class="pull-left">家庭无线组网</span><span class="pull-right">50元/次</span></div>
+        <div class="expend-serve-list-detail"><span class="pull-left">家庭无线组网</span><span class="pull-right">50元/次</span></div>
+        <div class="expend-serve-list-detail">
+            <p>材料费说明：五类线5元/米（明线订固），如使用线槽另加5元/米，实际产生费用以服务人员上门确认为准</p>
+        </div>
+    </div>
+    <div class="row road-expend-serve-list road-expend-serve-list-detail">
+        <p class="road-expend-serve-list-title">家庭网络服务</p>
+        <div class="expend-serve-list-detail"><span class="detail-lianxi">宽带账号:</span><input type="text" class="pull-right"></div>
+        <div class="expend-serve-list-detail"><span class="detail-lianxi">联系人:</span><input></div>
+        <div class="expend-serve-list-detail"><span class="detail-lianxi">联系电话:</span><input></div>
+        <div class="expend-serve-list-detail"><span class="detail-lianxi">推荐人:</span><input></div>
+
+    </div>
+    <div class="serve-select">
+        <a href="roadexpendsuccess.html"><button type="button" class="btn">确认</button></a>
+    </div>
+    <div class="home-back">
+        <div class="home-goto-home">
+            <a href="index.html">
+                <div class="home-goto-homeIcon">
+                    <i class="iconfont icon-home"></i>
+                </div>
+            </a>
+        </div>
+        <div class="goto-back">
+            <div class="goto-backIcon">
+                <i class="iconfont icon-back"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/serve.js"></script>
+<script>
+    window.onload=function () {
+        if($(window).width()<'1170'){
+            $('.serve').css('display','none');
+            $('body').css('background','#eeeeee');
+        }
+        $('.false-point-chui').click(function () {
+//            var id=this.id;
+            $(this).addClass('false-point-active');
+            $('.false-point-success-chui').css('display','block');
+
+//            $('#'+id).addClass('active')
+
+        });
+        var word=$('.serve-list-word').text();
+        if(word.length>6){
+            $('.serve-list-word').text(word[0]+word[1]+word[2]+word[3]+word[4]+"......");
+            $('.serve-list-word').append('<a class="open-list">查看详情</a>')
+        }
+        $('.open-list').click(function () {
+            $('.serve-list-word').html('');
+            $('.serve-list-word').text(word);
+            $('.serve-list-word').append('<a class="close-list">收起</a>')
+        });
+        $('.close-list').click(function () {
+            alert('s')
+
+
+        });
+
+    }
+</script>
+</html>

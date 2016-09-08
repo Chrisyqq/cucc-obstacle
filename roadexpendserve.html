@@ -7,7 +7,7 @@
     <link href="css/serve.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <link href="font/iconfont.css" rel="stylesheet">
-    <title>常见错误代码691</title>
+    <title>预约上门维修</title>
 </head>
 <body>
 <div class="container">
@@ -43,17 +43,31 @@
             </div>
         </div>
 
-        <div class="row serve-explain">
-                <p>经过小翼的细致得检查，发现有可能是拨号软件不给力，建议您重新建立拨号软件,敢问您的电脑系统是什么？</p>
+    </div>
+    <div class="row road-expend-serve-head">
+        <span>057187654321</span><a href="roadexpenddindan.html"><span class="myshopcar">我的订单</span></a>
+    </div>
+    <div class="row road-expend-serve-list">
+        <p class="road-expend-serve-list-title">家庭网络服务</p>
+        <div class="expend-serve-list">
+            <div class="serve-list-title">家庭无线组网</div>
+            <div class="serve-list-word">四季豆就是斗篷惊悚大片爽口的排水口片爬上来搭配</div>
+            <div class="expend-serve-list-right">
+                <div class="serve-select">
+                    <p class="serve-list-money">50元/次</p>
+                    <a href=""><button type="button" class="btn">添加</button></a>
+                </div>
+
+            </div>
         </div>
-        <!-- serve select -->
-        <div class="serve-select">
-            <a href=""><button type="button" class="btn">XP系统</button></a>
-            <a href="691false.html"><button type="button" class="btn">WIN7/WIN8系统</button></a>
-            <a href=""><button type="button" class="btn">苹果系统</button></a>
-            <a href=""><button type="button" class="btn">其他常见问题</button></a>
-            <a href=""><button type="button" class="btn">预约上门服务</button></a>
+    </div>
+    <div class="row road-expend-serve-foot">
+        <span class="road-expend-serve-foot-left">清空</span>
+        <div class="foot-middle">
+            <p>共0元</p>
+            <p>(共添加0项服务)</p>
         </div>
+        <div class="foot-right">去结算</div>
     </div>
     <div class="home-back">
         <div class="home-goto-home">
@@ -77,14 +91,32 @@
 <script src="js/serve.js"></script>
 <script>
     window.onload=function () {
-        if($(window).width()>='1170'){
-            $('.serve-explain').css('text-align', 'left');
-        }
         if($(window).width()<'1170'){
-            $('.serve-explain').css('text-align', 'left');
-            $('.serve-explain').css('padding-left', '20%');
-            $('.serve-explain').css('padding-right', '20%');
+            $('.serve').css('display','none');
+            $('body').css('background','#eeeeee');
         }
+        $('.false-point-chui').click(function () {
+//            var id=this.id;
+            $(this).addClass('false-point-active');
+            $('.false-point-success-chui').css('display','block');
+
+//            $('#'+id).addClass('active')
+
+        });
+        var word=$('.serve-list-word').text();
+        if(word.length>6){
+            $('.serve-list-word').text(word[0]+word[1]+word[2]+word[3]+word[4]+"......");
+            $('.serve-list-word').append('<a class="open-list">查看详情</a>')
+        }
+        $('.open-list').click(function () {
+            $('.serve-list-word').html('');
+
+            $('.serve-list-word').append('<a class="close-list">收起</a>')
+        });
+        $('.close-list').click(function () {
+            alert('s')
+        });
+
     }
 </script>
 </html>

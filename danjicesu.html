@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -7,9 +8,9 @@
     <link href="css/serve.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <link href="font/iconfont.css" rel="stylesheet">
-    <title>常见错误代码691</title>
+    <title>网速慢</title>
 </head>
-<body>
+<body style="overflow: hidden">
 <div class="container">
 
     <!-- serve -->
@@ -43,17 +44,24 @@
             </div>
         </div>
 
-        <div class="row serve-explain">
-                <p>经过小翼的细致得检查，发现有可能是拨号软件不给力，建议您重新建立拨号软件,敢问您的电脑系统是什么？</p>
-        </div>
-        <!-- serve select -->
-        <div class="serve-select">
-            <a href=""><button type="button" class="btn">XP系统</button></a>
-            <a href="691false.html"><button type="button" class="btn">WIN7/WIN8系统</button></a>
-            <a href=""><button type="button" class="btn">苹果系统</button></a>
-            <a href=""><button type="button" class="btn">其他常见问题</button></a>
-            <a href=""><button type="button" class="btn">预约上门服务</button></a>
-        </div>
+         <div class="row false-number-head">
+             <p>网速慢</p>
+             <div class="serve-head-right icon-cucc-qq" style="position: absolute; right: 10px; top: 0;">
+
+             </div>
+         </div>
+         <div class="road-slow-head">
+             您遇到的问题是:
+         </div>
+         <!-- serve select -->
+         <div class="serve-select">
+             <a href="login.html"><button type="button" class="btn">打开网页慢</button></a>
+             <a href="login.html"><button type="button" class="btn">玩游戏卡顿延迟</button></a>
+             <a href="login.html"><button type="button" class="btn">视频卡顿/下载速度慢</button></a>
+             <a href="login.html"><button type="button" class="btn">上述所有都慢</button></a>
+         </div>
+
+
     </div>
     <div class="home-back">
         <div class="home-goto-home">
@@ -78,13 +86,53 @@
 <script>
     window.onload=function () {
         if($(window).width()>='1170'){
-            $('.serve-explain').css('text-align', 'left');
+
         }
         if($(window).width()<'1170'){
-            $('.serve-explain').css('text-align', 'left');
-            $('.serve-explain').css('padding-left', '20%');
-            $('.serve-explain').css('padding-right', '20%');
+            $('.serve').css('display', 'none');
         }
+        var followimg=$('.follow-images-li li');
+        var followimgl=followimg.length;
+        $('.follow-image-page-all').text(followimgl);
+        for (var i=0;i<followimgl;i++){
+            var wd=100*i+15+'%';
+            $('.follow-images-li li').eq(i).css({'position':'absolute','width':'70%','top':'100','left':wd})
+        }
+        var a=1;
+        $('.follow-image-next').click(function () {
+
+            if(a<followimgl){
+                for (var i=0;i<followimgl;i++){
+                    var wd=100*i+15-100*a+'%';
+                    $('.follow-images-li li').eq(i).css({'position':'absolute','width':'70%','top':'100','left':wd});
+                    $('.follow-image-page-now').text(a+1);
+                }
+                a++;
+            }else{
+
+            }
+
+            return a;
+
+        });
+
+        $('.follow-image-prev').click(function () {
+
+            if(a>1){
+                a--;
+                for (var i=0;i<followimgl;i++){
+                    var b=followimgl-a;
+                    var wd=100*i+15-100*b+'%';
+                    $('.follow-images-li li').eq(i).css({'position':'absolute','width':'70%','top':'100','left':wd});
+                    $('.follow-image-page-now').text(a)
+                }
+
+            }else{
+
+            }
+
+
+        })
     }
 </script>
 </html>

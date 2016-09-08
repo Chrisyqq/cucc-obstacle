@@ -157,8 +157,33 @@ function processerbarq(time){
             //     document.getElementById('msg').innerHTML="&nbsp;&nbsp;成功";
             // }
         },70);
-};
+}
+function processerbarsmall(time){
 
+    $("#line").each(function(i,item){
+        var a=parseInt($(item).attr("w"));
+        $(item).animate({
+            width: a+"%"
+        },time);
+    });
+    var si = window.setInterval(
+        function(){
+            a=$("#line").width();
+            if(window.screen.width<=1200){
+                b=(a/278*100).toFixed(0);
+            }else {
+                b=(a/600*100).toFixed(0);
+            }
+            document.getElementById('percent').innerHTML=b+"%";
+            $('.load-precess').text(b+"%")
+            document.getElementById('percent').style.left=a-30+"px";
+            // document.getElementById('msg').innerHTML="上传中";
+            // if(document.getElementById('percent').innerHTML=="100%") {
+            //     clearInterval(si);
+            //     document.getElementById('msg').innerHTML="&nbsp;&nbsp;成功";
+            // }
+        },70);
+}
 function progresssetout() {
     setTimeout(
         function(){

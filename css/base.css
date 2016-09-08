@@ -28,6 +28,45 @@
     color: #ffffff;
     height: 40px;
 }
+/* shake */
+@-webkit-keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0)
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translateX(-5px);
+        -ms-transform: translateX(-5px);
+        transform: translateX(-5px)
+    }
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+        transform: translateX(5px)
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    animation: shake 0.5s;
+}
 @media screen and (min-width: 1170px) {
     .container {
         box-shadow: 0px 0px 10px #dddddd;
@@ -36,21 +75,24 @@
         min-height: 800px;
     }
 
-    .serve-head{
+    .serve-head {
         height: 60px;
         background: #1993ed;
         color: #ffffff;
         position: relative;
         padding-left: 22px;
     }
-    .serve-head i{
+
+    .serve-head i {
         font-size: 18px;
     }
-    .serve-head .serve-head-left{
+
+    .serve-head .serve-head-left {
         float: left;
         height: 60px;
     }
-    .serve-circle-icon{
+
+    .serve-circle-icon {
         width: 44px;
         height: 44px;
         border-radius: 50%;
@@ -58,25 +100,29 @@
         margin-top: 8px;
         float: left;
     }
-    .information-account-number{
+
+    .information-account-number {
         float: left;
         font-size: 18px;
         margin-left: 10px;
     }
-    .information-one{
+
+    .information-one {
         position: relative;
         width: auto;
         height: 60px;
         float: left;
         line-height: 66px;
     }
-    .information-one .serve-circle-icon i{
+
+    .information-one .serve-circle-icon i {
         position: absolute;
         left: 7px;
         top: 0px;
         font-size: 30px;
     }
-    .information-two{
+
+    .information-two {
         float: left;
         margin-left: 30px;
         width: auto;
@@ -84,13 +130,16 @@
         line-height: 64px;
         font-size: 18px;
     }
-    .information-two .information-two-star{
+
+    .information-two .information-two-star {
 
     }
-    .information-two .information-two-star i{
+
+    .information-two .information-two-star i {
         color: #ffb30f;
     }
-    .serve-head .serve-head-right{
+
+    .serve-head .serve-head-right {
         position: absolute;
         top: 80px;
         right: 74px;
@@ -98,91 +147,139 @@
 
     }
 
-
-    .change-name{
+    .change-name {
         color: #ffb30f;
         margin-right: 20px;
     }
 
     /* button组建 */
-    .login-next{
+    .login-next {
         background: #1993ed;
         width: 100%;
         color: #ffffff;
         height: 40px;
     }
-    .login-next{
+
+    .login-next {
         background: #1993ed;
         width: 100%;
         color: #ffffff;
         height: 40px;
     }
-    .serve-select{
+
+    .speed-road-button {
+        width: 288px;
+        margin: 0 auto 0 auto;
+        text-align: left !important;
+    }
+
+    .speed-road-button button {
+        width: 48% !important;
+        background: #e5e5e5 !important;
+        color: #313131 !important;
+        font-size: 14px !important;
+    }
+
+    .speed-road-button .speed-road-button-big {
+        width: 60% !important;
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+
+    .serve-select {
         width: 360px;
-        margin: 0 auto ;
+        margin: 0 auto;
         margin-top: 20px;
         text-align: center;
     }
-    .serve-select .title{
+
+    .serve-select .title {
         font-size: 20px;
     }
-    .serve-select button{
+
+    .serve-select button {
         background: #1993ed;
         color: #ffffff;
         margin-top: 15px;
         font-size: 18px;
         height: 40px;
-        width: 70%;
+        width: 80%;
     }
-    .serve-select input{
+
+    .serve-select input {
         margin-top: 15px;
         height: 40px;
         width: 70%;
         margin-left: 15%;
     }
-    .serve-select .serve-active{
+
+    .serve-select .input-big {
+        margin-top: 15px;
+        height: 40px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .serve-select .input-small {
+        margin-top: 15px;
+        height: 40px;
+        width: 50%;
+        margin-left: 10%;
+        margin-right: 36px;
+    }
+
+    .serve-select .serve-active {
         background: #97d3ff;
     }
+
     /* 悬浮 */
-    .container{
+    .container {
         position: relative;
     }
-    .home-back{
+
+    .home-back {
         position: absolute;
         top: 80px;
         left: 30px;
         width: 200px;
         height: 60px;
     }
-    .home-goto-home{
+
+    .home-goto-home {
         float: left;
     }
-    .home-goto-homeIcon{
+
+    .home-goto-homeIcon {
         width: 46px;
         height: 46px;
         border-radius: 50%;
         background: #a2d8ff;
         text-align: center;
     }
-    .home-goto-homeIcon i{
+
+    .home-goto-homeIcon i {
         font-size: 30px;
     }
-    .goto-back{
+
+    .goto-back {
         float: left;
         margin-left: 30px;
     }
-    .goto-backIcon{
+
+    .goto-backIcon {
         width: 46px;
         height: 46px;
         border-radius: 50%;
         background: #a2d8ff;
         text-align: center;
     }
-    .goto-backIcon i{
+
+    .goto-backIcon i {
         font-size: 30px;
     }
+
     /*  */
-    .serve-explain{
+    .serve-explain {
         text-align: center;
         background: #f0f3f6;
         width: 600px;
@@ -195,25 +292,30 @@
         padding-right: 35px;
         color: #1993ed;
     }
-    .serve-explain div{
+
+    .serve-explain div {
         color: #1993ed;
     }
+
     /* broad-band */
-    .broad-band{
+    .broad-band {
         padding-right: 30px;
         padding-left: 30px;
     }
-    .broad-band-title{
+
+    .broad-band-title {
         font-size: 30px;
         margin-bottom: 50px;
     }
-    .broad-band-word{
+
+    .broad-band-word {
         width: 500px;
         margin: auto auto;
         text-align: left;
     }
+
     /* common-use */
-    .common-use{
+    .common-use {
         position: relative;
         text-align: center;
         min-height: 200px;
@@ -224,20 +326,24 @@
         padding-top: 30px;
         padding-bottom: 20px;
     }
-    .test-results-head{
+
+    .test-results-head {
         width: 80%;
         margin-left: 10%;
         text-align: left;
         margin-bottom: 8px;
     }
-    .test-results-head .icon-tanhao{
+
+    .test-results-head .icon-tanhao {
         color: #1993ed;
         font-size: 22px;
     }
-    .test-results-head span{
+
+    .test-results-head span {
         margin-left: 10px;
     }
-    .test-results-list{
+
+    .test-results-list {
         width: 80%;
         height: 40px;
         line-height: 40px;
@@ -245,12 +351,14 @@
         text-align: left;
         position: relative;
     }
-    .test-results-list span{
+
+    .test-results-list span {
         margin-left: 30px;
         font-size: 18px;
         font-weight: 900;
     }
-    .test-results-list:before{
+
+    .test-results-list:before {
         content: '';
         position: absolute;
         top: 20px;
@@ -260,7 +368,8 @@
         border-radius: 50%;
         background: #1993ed;
     }
-    .test-results-list:after{
+
+    .test-results-list:after {
         content: '';
         position: absolute;
         top: -14px;
@@ -269,7 +378,8 @@
         height: 38px;
         background: #1993ed;
     }
-    .test-results-list button{
+
+    .test-results-list button {
         height: 28px;
         line-height: 10px;
         margin-top: 6px;
@@ -282,60 +392,94 @@
         background: #71c0fb;
         letter-spacing: 2px;
     }
-    .common-use .login-next{
+
+    .common-use .login-next {
         position: absolute;
         width: 80%;
         bottom: -100px;
         left: 10%;
     }
+
     /*success page*/
-    .success-page{
+    .success-page {
         width: 100%;
         height: 120px;
         margin-top: 100px;
         text-align: center;
     }
-    .success-page-h{
+
+    .road-speed-yuyue {
+        width: 100%;
+        height: 120px;
+        margin-top: 0 !important;
+        text-align: center;
+    }
+
+    .road-speed-yuyuetime {
+        width: 60px;
+        height: 60px;
+        background: url("../img/shizhong.png") no-repeat center;
+        background-size: 100% 100%;
+        margin: 150px auto 0 auto;
+    }
+
+    .road-speed-yuyue-m {
+        margin-top: 30px;
+        color: #a2a1a1;
+        text-align: center !important;
+        color: #1993ed;
+        font-size: 16px;
+    }
+
+    .success-page-h {
         font-size: 22px;
         font-weight: bold;
         color: #1993ed;
         width: 160px;
-        margin:auto auto;
+        margin: auto auto;
         clear: both;
         margin-top: 30px;
     }
-    .success-page-m{
+
+    .success-page-m {
         width: 100%;
-        margin-top:30px;
-        color:#a2a1a1;
-        font-size:14px;
+        margin-top: 30px;
+        color: #a2a1a1;
+        font-size: 14px;
     }
-    .success-page-m i{
+
+    .success-page-m i {
         font-size: 18px;
         color: #ff9600 !important;
     }
-    .success-page-m span{
+
+    .success-page-m span {
         color: #ff9600;
     }
-    .success-page-icon{
+
+    .success-page-icon {
         height: 40px;
-        width:40px;
-        float:left;
+        width: 40px;
+        float: left;
     }
-    .success-page-icon i{
-        font-size:40px;
+
+    .success-page-icon i {
+        font-size: 40px;
     }
-    .success-page-word{
+
+    .success-page-word {
         height: 40px;
-        width:140px;
+        width: 140px;
         line-height: 60px;
 
     }
-    .success-page-body{
+
+    .success-page-body {
         background: #eeeeee;
     }
+
     /* 常见错误代码 */
-    .false-number-head{
+    .false-number-head {
         display: none;
         height: 40px;
         line-height: 40px;
@@ -343,80 +487,385 @@
         color: #ffffff;
         text-align: center;
     }
-    .false-number-select button{
+
+    .false-number-select button {
         color: #8a8a8a;
         background: #ffffff;
         border: 1px solid #d7d7d7;
     }
-    .false-number-select button:hover{
+
+    .false-number-select button:hover {
         color: #ffffff;
         background: #32a1f3;
         border: 1px solid #d7d7d7;
     }
-    .false-number-select{
+
+    .false-number-select {
         margin-top: 60px;
     }
 
+    /* speed road slow */
+    .road-slow-head {
+        width: 288px;
+        margin: 120px auto 0 auto;
+        height: 20px;
+        line-height: 40px;
+    }
+
+    .roadbind-xz-head {
+        width: 380px;
+    }
+
+    .road-slow-luyou {
+        width: 380px;
+        margin: 20px auto 0 auto;
+        height: 180px;
+
+        color: #313131;
+    }
+
+    .road-slow-luyou button {
+        text-align: center;
+        width: 32%;
+        height: 40px;
+        font-size: 14px;
+        color: #313131;
+        line-height: 40px;
+        margin-top: 5px;
+    }
+
+    /* speed road slow end */
     /* follow-images */
-    .follow-image{
+    .follow-image {
         width: 400px;
         height: 600px;
         margin: 60px auto 0 auto;
         position: relative;
         overflow: hidden;
     }
-    .follow-image p{
-        padding-left: 60px;
+
+    .follow-image-big {
+        width: 600px;
+        height: 600px;
+        margin: 60px auto 0 auto;
+        position: relative;
+        overflow: hidden;
     }
-    .follow-image-page{
+
+    .follow-image p {
         padding-left: 60px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
-    .follow-image-page{
+
+    .follow-image-page {
         width: 100%;
         height: 40px;
         line-height: 40px;
         font-size: 14px;
-        /*border-bottom: #9f9f9f solid 1px;*/
+        padding-left: 60px;
+
     }
-    .follow-image-page-now{
+
+    .follow-image-page-bottom {
+        border-bottom: #9f9f9f solid 1px;
+    }
+
+    .follow-image-page-now {
         width: 100%;
         color: #1993ed;
         font-size: 22px;
     }
-    .follow-images-li ul li{
+
+    .follow-images-li ul li {
         width: 100%;
         list-style: none;
         padding: 0;
         float: left;
     }
-    .follow-images-li ul{
+
+    .follow-images-li ul {
         width: 100%;
         padding: 0;
     }
-    .follow-images-li ul li img{
+
+    .follow-images-li ul li img {
         width: 100%;
         height: auto;
     }
-    .follow-image-prev{
+
+    .follow-image-prev {
         position: absolute;
         left: 0px;
         top: 200px;
     }
-    .follow-image-prev i{
+
+    .follow-image-prev i {
         font-size: 80px;
         color: #1993ed;
     }
-    .follow-image-next{
+
+    .follow-image-next {
         position: absolute;
         right: 0px;
         top: 200px;
     }
-    .follow-image-next i{
+
+    .follow-image-next i {
         font-size: 80px;
         color: #1993ed;
     }
-}
 
+    /* speed road slow */
+    .serve-select .wrong-passWorld-number {
+        height: 20px;
+        line-height: 20px;
+        width: 80%;
+        margin-left: 10%;
+        font-size: 12px;
+        text-align: left;
+        color: #f60b0b;
+    }
+
+    /* speed road slow end */
+    /* mm serve slow end */
+    /* mm change road slow end */
+    .serve-select .wrong-passWorld-number {
+        height: 20px;
+        width: 90%;
+        font-size: 12px;
+        color: #f60b0b;
+    }
+
+    /* mm change road slow end */
+    .change-mm-body .old-mm {
+        position: relative;
+        width: 100%;
+        height: 60px;
+    }
+
+    .change-mm-body .old-mm span {
+        position: absolute;
+        right: 64%;
+        top: 25px;
+    }
+
+    .change-mm-body .new-mm {
+        position: relative;
+        width: 100%;
+        height: 60px;
+    }
+
+    .change-mm-body .new-mm span {
+        position: absolute;
+        right: 64%;
+        top: 25px;
+    }
+
+    /* road expend serve */
+    .road-expend-serve-head {
+        height: 40px;
+        width: 400px;
+        margin: 60px auto 0 auto;
+        display: none;
+        background: #1993ed;
+        line-height: 40px;
+        color: #ffffff;
+        padding-left: 10%;
+        position: relative;
+    }
+
+    .road-expend-serve-list {
+        width: 400px;
+        margin: 60px auto 0 auto;
+        position: relative;
+    }
+
+    .road-expend-serve-list-detail {
+        width: 400px;
+        margin: 0px auto 0 auto !important;
+        position: relative;
+    }
+
+    .road-expend-serve-head .myshopcar {
+        position: absolute;
+        right: 10%;
+    }
+
+    .road-expend-serve-list .road-expend-serve-list-title {
+        color: #5d5d5d;
+        font-size: 14px;
+        padding-left: 10%;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .road-expend-serve-list .road-expend-serve-list-title:after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 16px;
+        background: #1993ed;
+        top: 2px;
+        left: 20px;
+        color: #5d5d5d;
+        font-size: 14px;
+    }
+
+    .expend-serve-list {
+        width: 96%;
+        min-height: 110px;
+        margin-left: 2%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        border-radius: 4px;
+        background: #ffffff;
+        position: relative;
+        color: #5d5d5d;
+    }
+
+    .expend-serve-list-detail {
+        width: 96%;
+        min-height: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 40px;
+        margin-left: 2%;
+        background: #ffffff;
+        position: relative;
+        color: #5d5d5d;
+        border-bottom: 1px solid #5d5d5d;
+    }
+
+    .expend-serve-list-detail input{
+        width: 70%;
+        position: absolute;
+        right: 0;
+        height: 39px;
+        border: none;
+    }
+    .expend-serve-list-detail .detail-lianxi{
+        position: absolute;
+        right: 72%;
+        height: 40px;
+        line-height: 40px;
+        border: none;
+    }
+
+    .expend-serve-list-detail .pull-right {
+        color: #ff9600;
+    }
+
+    .expend-serve-list .serve-list-title {
+        width: 50%;
+    }
+
+    .expend-serve-list .serve-list-word {
+        font-size: 12px;
+        width: 50%;
+    }
+
+    .expend-serve-list .serve-list-title:after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: #5d5d5d;
+        border-radius: 50%;
+        top: 16px;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .expend-serve-list .serve-list-word {
+
+    }
+
+    .expend-serve-list-right {
+        width: 50%;
+        float: left;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .expend-serve-list-right {
+        float: left;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .expend-serve-list-right .serve-select {
+        position: absolute;
+        top: 10px;
+        width: 30%;
+        right: 20px;
+    }
+
+    .expend-serve-list-right .serve-select button {
+        margin-top: 0 !important;
+    }
+
+    .expend-serve-list-right .serve-select p {
+        color: #ff9600;
+        font-size: 12px;
+        margin-bottom: 0 !important;
+    }
+
+    .road-expend-serve-foot {
+        height: 60px;
+        line-height: 60px;
+        width: 400px;
+        margin: 60px auto 0 auto;
+        position: relative;
+        background: #1993ed;
+        color: #ffffff;
+    }
+
+    .road-expend-serve-foot-left {
+        font-size: 18px;
+        margin-left: 15px;
+        position: relative;
+    }
+
+    .road-expend-serve-foot-left:after {
+        content: '';
+        width: 1px;
+        height: 30px;
+        background: #ffffff;
+        position: absolute;
+        left: 50px;
+        top: -5px;
+    }
+
+    .foot-middle {
+        position: absolute;
+        right: 80px;
+        top: 0;
+        width: 120px;
+        text-align: center;
+        height: 60px;
+        font-size: 14px;
+        line-height: 0px;
+    }
+
+    .foot-middle p {
+        margin-top: 22px;
+    }
+
+    .foot-right {
+        background: #f1b73b;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80px;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        font-size: 20px;
+    }
+
+}
 @media only screen and (max-width: 1170px) {
     /* login */
     .serve-head .serve-head-right{
@@ -442,7 +891,6 @@
         background: #32a1f3;
         min-height: 200px;
         border-top:#1993ed 1px solid;
-        color: #ffffff;
         padding-top: 30px;
         padding-bottom: 20px;
         color: #ffffff;
@@ -453,12 +901,13 @@
         padding-left: 30px;
     }
     .broad-band-title{
-        font-size: 30px;
+        font-size: 18px;
     }
     .broad-band-word{
-        width: 200px;
+        width: 80%;
         margin: auto auto;
         text-align: left;
+        margin-top: 20px;
     }
     .serve-head .information-account-number {
         position: absolute;
@@ -536,13 +985,83 @@
         bottom: -100px;
         left: 10%;
     }
-
+    /* select */
+    .speed-road-button{
+        width: 80%;
+        margin: 0 auto 0 auto;
+        text-align: left !important;
+    }
+    .speed-road-button button{
+        width: 48% !important;
+        background: #e5e5e5 !important;
+        color: #313131 !important;
+        font-size: 14px !important;
+    }
+    .speed-road-button .speed-road-button-big{
+        width: 60% !important;
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+    .serve-select{
+        margin-top: 5px;
+        text-align: center;
+    }
+    .serve-select .input-small{
+        margin-top: 15px;
+        height: 40px;
+        width: 50%;
+        margin-left: 10%;
+        margin-right: 36px;
+    }
+    .serve-select .title{
+        font-size: 20px;
+    }
+    .serve-select button{
+        background: #1993ed;
+        color: #ffffff;
+        margin-top: 15px;
+        height: 40px;
+        width: 80%;
+    }
+    .serve-select input{
+        margin-top: 15px;
+        height: 40px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .serve-select input:hover{
+        background: #ffffff;
+    }
+    .serve-select .serve-active{
+        background: #97d3ff;
+    }
+    /* select end */
     /*success page*/
     .success-page{
         width: 100%;
         height: 120px;
         margin-top: 50%;
         text-align: center;
+    }
+    .road-speed-yuyue{
+        width: 100%;
+        height: 120px;
+        margin-top: 0!important;
+        text-align: center;
+    }
+    .road-speed-yuyuetime{
+        width: 60px;
+        height: 60px;
+        background: url("../img/shizhong.png") no-repeat center;
+        background-size: 100% 100%;
+        margin: 50px auto 0 auto;
+    }
+    .road-speed-yuyue-m{
+        margin-top:30px;
+        color:#a2a1a1;
+        text-align: center !important;
+        color: #1993ed;
+        font-size: 16px;
     }
     .success-page-h{
         font-size: 22px;
@@ -559,6 +1078,15 @@
         color:#a2a1a1;
         font-size:14px;
     }
+    .xiudu-m{
+        text-align: left;
+        width: 80%;
+        margin-left: 12%;
+        margin-top:30px;
+        color:#a2a1a1;
+        font-size:14px;
+    }
+
     .success-page-m i{
         font-size: 18px;
         color: #ff9600 !important;
@@ -659,6 +1187,245 @@
         font-size: 50px;
         color: #1993ed;
     }
+
+    /* speed road slow */
+    .road-slow-head{
+        width: 70%;
+        margin-left: 10%;
+        height: 60px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .roadbind-xz-head{
+        width: 100%;
+        margin-left: 15px !important;
+        height: 60px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .road-slow-luyou{
+        width: 100%;
+        margin: 20px auto 0 auto;
+        height: 180px;
+
+        color: #313131;
+    }
+    .road-slow-luyou button{
+        text-align: center;
+        width: 32%;
+        height: 40px;
+        font-size: 12px;
+        line-height: 40px;
+        color: #313131;
+        margin-top: 5px;
+    }
+    /* speed road slow end */
+
+    /* mm serve slow end */
+    .serve-select .wrong-passWorld-number{
+        height: 20px;
+        line-height: 20px;
+        width: 80%;
+        margin-left: 10%;
+        font-size: 12px;
+        text-align: left;
+        color: #f60b0b;
+    }
+    /* mm serve road slow end */
+    /* mm change road slow end */
+
+    .change-mm-body .old-mm{
+        position: relative;
+        width: 100%;
+        height: 60px;
+    }
+    .change-mm-body .old-mm span{
+        position: absolute;
+        right: 64%;
+        top: 25px;
+    }
+    .change-mm-body .new-mm{
+        position: relative;
+        width: 100%;
+        height: 60px;
+    }
+    .change-mm-body .new-mm span{
+        position: absolute;
+        right: 64%;
+        top: 25px;
+    }
+    /* mm change road slow end */
+
+    /* road expend serve */
+    .road-expend-serve-head{
+        height: 40px;
+        background: #1993ed;
+        line-height: 40px;
+        color: #ffffff;
+        padding-left: 10%;
+        position: relative;
+    }
+    .road-expend-serve-head .myshopcar{
+        position: absolute;
+        right: 10%;
+    }
+    .road-expend-serve-list .road-expend-serve-list-title{
+        color: #5d5d5d;
+        font-size: 14px;
+        padding-left: 10%;
+        margin-top: 10px;
+        position: relative;
+    }
+    .road-expend-serve-list .road-expend-serve-list-title:after{
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 16px;
+        background: #1993ed;
+        top: 2px;
+        left: 20px;
+        color: #5d5d5d;
+        font-size: 14px;
+    }
+    .expend-serve-list{
+        width: 96%;
+        min-height: 80px;
+        margin-left: 2%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        border-radius: 4px;
+        background: #ffffff;
+        position: relative;
+        color: #5d5d5d;
+    }
+    .expend-serve-list .serve-list-title{
+        width: 50%;
+    }
+    .expend-serve-list .serve-list-word{
+        font-size: 12px;
+        width: 50%;
+    }
+    .expend-serve-list .serve-list-title:after{
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: #5d5d5d;
+        border-radius: 50%;
+        top: 16px;
+        left: 10px;
+        font-size: 14px;
+    }
+    .expend-serve-list .serve-list-word{
+
+    }
+    .expend-serve-list-right{
+        width: 50%;
+        float: left;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .expend-serve-list-right{
+        float: left;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .expend-serve-list-right .serve-select{
+        position: absolute;
+        top: 10px;
+        width: 30%;
+        right: 20px;
+    }
+    .expend-serve-list-right .serve-select button{
+        margin-top: 0 !important;
+    }
+    .expend-serve-list-right .serve-select p{
+        color: #ff9600;
+        font-size: 12px;
+        margin-bottom: 0 !important;
+    }
+    .road-expend-serve-foot{
+        position: fixed;
+        bottom: 0;
+        height: 60px;
+        line-height: 60px;
+        width: 100%;
+        background: #1993ed;
+        color: #ffffff;
+    }
+    .road-expend-serve-foot-left{
+        font-size: 18px;
+        margin-left: 15px;
+        position: relative;
+    }
+    .road-expend-serve-foot-left:after{
+        content: '';
+        width: 1px;
+        height: 30px;
+        background: #ffffff;
+        position: absolute;
+        left: 50px;
+        top: -5px;
+    }
+    .foot-middle{
+        position: absolute;
+        right: 80px;
+        top: 0;
+        width: 120px;
+        text-align: center;
+        height: 60px;
+        font-size: 14px;
+        line-height: 0px;
+    }
+    .foot-middle p{
+        margin-top: 22px;
+    }
+    .foot-right{
+        background: #f1b73b;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80px;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        font-size: 20px;
+    }
+    .close-list{
+        margin-left: 5px;
+    }
+    .expend-serve-list-detail {
+        width: 96%;
+        min-height: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 40px;
+        margin-left: 2%;
+        background: #ffffff;
+        position: relative;
+        color: #5d5d5d;
+        border-bottom: 1px solid #5d5d5d;
+    }
+
+    .expend-serve-list-detail input{
+        width: 70%;
+        position: absolute;
+        right: 0;
+        height: 39px;
+        border: none;
+    }
+    .expend-serve-list-detail .detail-lianxi{
+        position: absolute;
+        right: 72%;
+        height: 40px;
+        line-height: 40px;
+        border: none;
+    }
+
+    .expend-serve-list-detail .pull-right {
+        color: #ff9600;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -691,4 +1458,41 @@
         background: #32a1f3;
         border: 1px solid #d7d7d7;
     }
+
+    /* mm serve slow end */
+    .serve-select .wrong-passWorld-number{
+        height: 20px;
+        line-height: 20px;
+        width: 90%;
+        margin-left: 0;
+        font-size: 12px;
+        color: #f60b0b;
+        text-align: left;
+    }
+    /* mm serve road slow end */
+    /* mm change road slow end */
+
+    .change-mm-body .old-mm{
+        position: relative;
+        width: 100%;
+        height: 60px;
+    }
+    .change-mm-body .old-mm span{
+        position: absolute;
+        right: 64%;
+        top: 25px;
+    }
+    .change-mm-body .new-mm{
+        position: relative;
+        width: 100%;
+        height: 60px;
+    }
+    .change-mm-body .new-mm span{
+        position: absolute;
+        right: 64%;
+        top: 25px;
+    }
+    /* mm change road slow end */
+
+
 }

@@ -7,7 +7,7 @@
     <link href="css/serve.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <link href="font/iconfont.css" rel="stylesheet">
-    <title>宽带检测</title>
+    <title>本地连接</title>
 </head>
 <body style="overflow: hidden">
 <div class="container">
@@ -44,7 +44,7 @@
         </div>
 
          <div class="row false-number-head">
-             <p>重建拨号连接</p>
+             <p>本地连接</p>
              <div class="serve-head-right icon-cucc-qq" style="position: absolute; right: 10px; top: 0;">
 
              </div>
@@ -55,6 +55,9 @@
              <p>右键点桌面上的“网上邻居”，点击“属性”。</p>
              <div class="follow-images-li">
                 <ul>
+                    <li><img src="img/1.jpg"></li>
+                    <li><img src="img/2.jpg"></li>
+                    <li><img src="img/3.jpg"></li>
                     <li><img src="img/1.jpg"></li>
                     <li><img src="img/2.jpg"></li>
                     <li><img src="img/3.jpg"></li>
@@ -97,6 +100,7 @@
         }
         var followimg=$('.follow-images-li li');
         var followimgl=followimg.length;
+        $('.follow-image-page-all').text(followimgl);
         for (var i=0;i<followimgl;i++){
             var wd=100*i+15+'%';
             $('.follow-images-li li').eq(i).css({'position':'absolute','width':'70%','top':'100','left':wd})
@@ -108,7 +112,7 @@
                 for (var i=0;i<followimgl;i++){
                     var wd=100*i+15-100*a+'%';
                     $('.follow-images-li li').eq(i).css({'position':'absolute','width':'70%','top':'100','left':wd});
-                    $('.follow-image-page-now').text(a+1)
+                    $('.follow-image-page-now').text(a+1);
                 }
                 a++;
             }else{
@@ -118,6 +122,7 @@
             return a;
 
         });
+
         $('.follow-image-prev').click(function () {
 
             if(a>1){

@@ -7,9 +7,9 @@
     <link href="css/serve.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <link href="font/iconfont.css" rel="stylesheet">
-    <title>宽带检测</title>
+    <title>本地连接</title>
 </head>
-<body>
+<body style="overflow: hidden">
 <div class="container">
 
     <!-- serve -->
@@ -44,17 +44,31 @@
         </div>
 
          <div class="row false-number-head">
-             <p>常见错误代码</p>
+             <p>重建拨号连接</p>
+             <div class="serve-head-right icon-cucc-qq" style="position: absolute; right: 10px; top: 0;">
+
+             </div>
          </div>
-        <!-- serve select -->
-        <div class="serve-select false-number-select">
-            <a href="691false.html"><button type="button" class="btn">691</button></a>
-            <a href="#"><button type="button" class="btn">734/676/759</button></a>
-            <a href="769false2.html"><button type="button" class="btn">769</button></a>
-            <a href=""><button type="button" class="btn">720</button></a>
-            <a href=""><button type="button" class="btn">718</button></a>
-            <a href=""><button type="button" class="btn">602/633</button></a>
-        </div>
+
+         <div class="row follow-image follow-image-big">
+             <div class="follow-image-page follow-image-page-bottom"><span class="follow-image-page-now">1</span>/<span class="follow-image-page-all">3</span></div>
+             <p>登陆网厅www.189.cn，左侧全部产品及服务选【宽带】，再选择【上网速度测试】</p>
+             <div class="follow-images-li">
+                <ul>
+                    <li><img src="img/1.jpg"></li>
+                    <li><img src="img/2.jpg"></li>
+                    <li><img src="img/3.jpg"></li>
+                    <li><img src="img/1.jpg"></li>
+                    <li><img src="img/2.jpg"></li>
+                    <li><img src="img/3.jpg"></li>
+                </ul>
+
+             </div>
+             <span class="follow-image-prev"><i class="iconfont icon-iconpageprev1"></i></span>
+             <span class="follow-image-next"><i class="iconfont icon-iconpagenext1"></i></span>
+         </div>
+
+
     </div>
     <div class="home-back">
         <div class="home-goto-home">
@@ -79,12 +93,53 @@
 <script>
     window.onload=function () {
         if($(window).width()>='1170'){
-            mmmove();
-            mmAddWord()
+
         }
         if($(window).width()<'1170'){
             $('.serve').css('display', 'none');
         }
+        var followimg=$('.follow-images-li li');
+        var followimgl=followimg.length;
+        $('.follow-image-page-all').text(followimgl);
+        for (var i=0;i<followimgl;i++){
+            var wd=100*i+15+'%';
+            $('.follow-images-li li').eq(i).css({'position':'absolute','width':'70%','top':'100','left':wd})
+        }
+        var a=1;
+        $('.follow-image-next').click(function () {
+
+            if(a<followimgl){
+                for (var i=0;i<followimgl;i++){
+                    var wd=100*i+15-100*a+'%';
+                    $('.follow-images-li li').eq(i).css({'position':'absolute','width':'70%','top':'100','left':wd});
+                    $('.follow-image-page-now').text(a+1);
+                }
+                a++;
+            }else{
+
+            }
+
+            return a;
+
+        });
+
+        $('.follow-image-prev').click(function () {
+
+            if(a>1){
+                a--;
+                for (var i=0;i<followimgl;i++){
+                    var b=followimgl-a;
+                    var wd=100*i+15-100*b+'%';
+                    $('.follow-images-li li').eq(i).css({'position':'absolute','width':'70%','top':'100','left':wd});
+                    $('.follow-image-page-now').text(a)
+                }
+
+            }else{
+
+            }
+
+
+        })
     }
 </script>
 </html>

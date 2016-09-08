@@ -110,6 +110,11 @@ body {
         font-size: 22px;
         color: #1993ed;
     }
+    .list-tip-x{
+        font-size: 14px;
+        color: #8a8a8a;
+        margin-top: 15px;
+    }
     .bind-tip-list ul{
         margin-top: 10px;
         padding: 0px;
@@ -267,6 +272,13 @@ body {
     .bind-words div{
         color: #1993ed;
         text-align: left;
+    }
+    .list-tip-x{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 14px;
+        color: #8a8a8a;
+        margin-top: 15px;
     }
     .bind-tip-list ul{
         border-top: 1px solid #d7d7d7;
