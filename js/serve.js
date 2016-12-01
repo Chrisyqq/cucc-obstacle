@@ -182,3 +182,16 @@ $(document).ready(function () {
 
 
 });
+
+(function () {
+    var followimg=$('.follow-images-li li');
+    followimg.click(function () {
+        var aa=$(this).html();
+        $('.amplify-img').html("");
+        $('.amplify-img').append(aa);
+        $('.amplify-img').css({'display':'block'});
+    });
+    $('.amplify-img').click(function () {
+        $('.amplify-img').css({'display':'none'});
+    })
+})();

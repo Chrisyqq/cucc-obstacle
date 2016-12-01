@@ -264,6 +264,11 @@
     .goto-back {
         float: left;
         margin-left: 30px;
+        color: #ffffff!important;
+    }
+
+    .goto-back i{
+        color: #ffffff;
     }
 
     .goto-backIcon {
@@ -592,6 +597,24 @@
     .follow-images-li ul li img {
         width: 100%;
         height: auto;
+        cursor: pointer;
+    }
+
+    .amplify-img{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        background-color:rgba(110,110,110,0.8);
+        animation: all ease 0.3s;
+    }
+    .amplify-img img{
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: 200px;
     }
 
     .follow-image-prev {
@@ -1138,6 +1161,22 @@
     }
 
     /* follow-images */
+    .amplify-img{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        background-color:rgba(110,110,110,0.8);
+        animation: all ease 0.3s;
+    }
+    .amplify-img img{
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 100px;
+    }
     .follow-image{
         width: 76%;
         margin-left: 12%;
